@@ -370,6 +370,55 @@ section { padding: 100px 5%; position: relative; z-index: 1; }
 .achievement li { padding: 8px 0; padding-left: 28px; position: relative; color: var(--text-muted); line-height: 1.6; }
 .achievement li::before { content: '✓'; position: absolute; left: 0; color: var(--success); font-weight: bold; font-size: 1.1rem; }
 
+/* ===== EXPERIENCE COLLAPSE (NEW) ===== */
+.timeline-collapse {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.timeline-collapse > .timeline-collapse-inner {
+    overflow: hidden;
+    min-height: 0;
+}
+.timeline-item.expanded .timeline-collapse {
+    grid-template-rows: 1fr;
+}
+.timeline-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    padding: 10px 20px;
+    background: var(--medium-gray);
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.timeline-toggle:hover {
+    border-color: var(--accent);
+    background: rgba(0,102,255,0.1);
+    box-shadow: 0 8px 25px rgba(0,102,255,0.2);
+}
+.timeline-toggle .toggle-icon {
+    display: inline-block;
+    transition: transform 0.35s ease;
+    color: var(--accent-light);
+    font-size: 1rem;
+    line-height: 1;
+}
+.timeline-item.expanded .timeline-toggle .toggle-icon {
+    transform: rotate(180deg);
+}
+.timeline-toggle .toggle-text-collapsed { display: inline; }
+.timeline-toggle .toggle-text-expanded { display: none; }
+.timeline-item.expanded .timeline-toggle .toggle-text-collapsed { display: none; }
+.timeline-item.expanded .timeline-toggle .toggle-text-expanded { display: inline; }
+
 /* ===== PROJECTS ===== */
 .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 60px; }
 .project-card {
@@ -520,7 +569,7 @@ footer a:hover { color: var(--text); }
     <div class="hero-container">
         <div class="hero-photo">
             <div class="hero-photo-wrapper">
-                <img src="photo.png" alt="Хайрльварин Булат — Коммуникационный дизайнер">
+                <img src="photo2.png" alt="Хайрльварин Булат — Коммуникационный дизайнер">
                 <div class="tech-badge">Брендинг</div>
                 <div class="tech-badge">JSX</div>
                 <div class="tech-badge">Python</div>
@@ -530,10 +579,8 @@ footer a:hover { color: var(--text); }
             <h1>Хайрльварин Булат</h1>
             <div class="title">Коммуникационный дизайнер</div>
             <p class="description">
-                Создаю целостные визуальные системы и бренд-коммуникации across all touchpoints 
-                (упаковка, полиграфия, digital, навигация). Моя суперсила — умение не только разрабатывать 
-                дизайн, но и автоматизировать его тиражирование с помощью кода (JSX, Python), 
-                обеспечивая идеальную консистентность и скорость там, где другие тонут в рутине.
+                Создаю визуальные системы и бренд-коммуникации. Моя суперсила — умение сочетать художественное видение, системный подход к дизайну и инженерный опыт в оптимизации процессов. 
+        
             </p>
             <div class="hero-tags">
                 <span class="tag">Коммуникационный дизайн</span>
@@ -546,7 +593,8 @@ footer a:hover { color: var(--text); }
                 <span class="tag">Автоматизация</span>
                 <span class="tag">AI-инструменты</span>
             </div>
-            
+
+            <!-- 
             <div class="salary-block">
                 <div class="label">Сейчас нахожусь</div>
                 <div class="values">
@@ -554,7 +602,8 @@ footer a:hover { color: var(--text); }
                         <span class="city-salary">📍 Уфа</span>
                     </div>
                 </div>
-            </div>
+            </div> 
+            
 
             <div class="relocation-block">
                 <strong>✈️ Готов приехать в Москву в течение 1 недели</strong>
@@ -563,7 +612,8 @@ footer a:hover { color: var(--text); }
                     Вопросы с жильём и логистикой проблем нет. Релокационный пакет не является критическим условием.
                 </p>
             </div>
-
+-->
+            
             <div class="hero-contacts">
                 <a href="https://t.me/bullez" target="_blank"><span>💬 Telegram</span></a>
                 <a href="mailto:bullez@mail.ru"><span>✉️ Email</span></a>
@@ -582,9 +632,9 @@ footer a:hover { color: var(--text); }
         <p class="section-subtitle">Дизайнер, который строит масштабируемые визуальные системы</p>
     </div>
     <div class="about-content">
-        <p><span class="highlight">Коммуникационный дизайн для меня — это не просто «сделать красиво», а решить бизнес-задачу через стройную визуальную систему.</span> За 10 лет я прошел путь от графического дизайнера до специалиста, который выстраивает бренд-коммуникации на всех уровнях: от айдентики и упаковки до digital и навигации.</p>
-        <p>Моя уникальность — в сочетании <span class="highlight-accent">глубокой экспертизы в брендинге и препрессе</span> с техническим бэкграундом (магистр по информатике). Я не только создаю гайдлайны, но и пишу скрипты (JSX, Python), которые автоматизируют рутину, гарантируя, что каждый макет, каждая этикетка и каждый баннер будут соответствовать стандартам бренда без человеческих ошибок.</p>
-        <p>Ищу роль Коммуникационного дизайнера в компании, где ценят системный подход, качество исполнения и инновации в рабочих процессах.</p>
+        <p><span class="highlight">Коммуникационный дизайн для меня — это прежде всего решение бизнес-задач.</span> За 10 лет я прошел путь от графического дизайнера до специалиста, который выстраивает бренд-коммуникации на всех уровнях.</p>
+         Я не только создаю гайдлайны, но и пишу скрипты (JSX, Python), которые автоматизируют рутину, гарантируя, что каждый макет будет соответствовать стандартам бренда без человеческих ошибок.</p>
+        <p>Ищу роль коммуникационного дизайнера в компании, где ценят системный подход, качество исполнения и инновации в рабочих процессах.</p>
     </div>
     <div class="stats">
         <div class="stat-card"><span class="stat-number">10+</span><span class="stat-label">лет в коммуникационном дизайне</span></div>
@@ -598,30 +648,8 @@ footer a:hover { color: var(--text); }
 <section id="skills" class="animate-on-scroll">
     <div class="section-header">
         <h2 class="section-title">Навыки и компетенции</h2>
-        <p class="section-subtitle">Стратегический дизайн, подкрепленный техническими инструментами</p>
     </div>
     <div class="skills-grid">
-        <div class="skill-category">
-            <h3>🎨 Коммуникационный дизайн</h3>
-            <ul class="skill-list">
-                <li>Брендинг, айдентика и визуальные системы</li>
-                <li>Дизайн упаковки (гофрокартон, этикетки, POS)</li>
-                <li>Полиграфический дизайн и Prepress (флексо, офсет)</li>
-                <li>Digital-дизайн (баннеры, соцсети, лендинги)</li>
-                <li>3D-визуализация продуктов и пространств (Blender)</li>
-                <li>Навигация и оформление сред</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <h3>💻 Автоматизация и Код</h3>
-            <ul class="skill-list">
-                <li>JSX / JavaScript (скрипты для Adobe Illustrator/InDesign)</li>
-                <li>Python (Telegram-боты, парсинг, обработка файлов)</li>
-                <li>HTML/CSS (лендинги, веб-конфигураторы продуктов)</li>
-                <li>Автоматизация рутинных процессов в дизайн-отделах</li>
-                <li>1С:Предприятие, Opti-Corrugated (интеграция дизайна и производства)</li>
-            </ul>
-        </div>
         <div class="skill-category">
             <h3>🛠️ Инструменты и AI</h3>
             <ul class="skill-list">
@@ -632,6 +660,27 @@ footer a:hover { color: var(--text); }
                 <li>Git, GitHub</li>
             </ul>
         </div>
+        <div class="skill-category">
+            <h3>💻 Автоматизация и код</h3>
+            <ul class="skill-list">
+                <li>JSX / JavaScript (скрипты для Adobe Illustrator/InDesign)</li>
+                <li>Python (Telegram-боты, парсинг, обработка файлов)</li>
+                <li>HTML/CSS (лендинги, веб-конфигураторы продуктов)</li>
+                <li>Автоматизация рутинных процессов в дизайн-отделах</li>
+                <li>1С:Предприятие, Opti-Corrugated (интеграция дизайна и производства)</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>🎨 Коммуникационный дизайн</h3>
+            <ul class="skill-list">
+                <li>Брендинг, айдентика и визуальные системы</li>
+                <li>Дизайн упаковки (гофрокартон, этикетки, POS)</li>
+                <li>Полиграфический дизайн и Prepress (флексо, офсет)</li>
+                <li>Digital-дизайн (баннеры, соцсети, лендинги)</li>
+                <li>3D-визуализация продуктов и пространств (Blender)</li>
+                <li>Навигация и средовой дизайн </li>
+            </ul>
+        </div>
     </div>
 </section>
 
@@ -639,96 +688,131 @@ footer a:hover { color: var(--text); }
 <section id="experience" class="experience animate-on-scroll">
     <div class="section-header">
         <h2 class="section-title">Опыт работы</h2>
-        <p class="section-subtitle">От создания визуальных систем к их технологичному масштабированию</p>
     </div>
     <div class="timeline">
         <div class="timeline-item">
             <div class="timeline-header">
                 <div class="timeline-title">
-                    <h3>Дизайнер-конструктор упаковки</h3>
-                    <div class="timeline-company">Добрый Картон, Уфа</div>
+                    <h3>Дизайнер-конструктор</h3>
+                    <div class="timeline-company">Добрый картон</div>
                 </div>
                 <div class="timeline-date">Март 2024 — Сентябрь 2026</div>
             </div>
             <div class="timeline-content">
-                <ul>
-                    <li>Разработка дизайн-систем и чертежей для гофроупаковки: лотки, самосборные коробки, POS-конструкции.</li>
-                    <li>Согласование технологических карт в 1С:Предприятие и Opti-Corrugated, обеспечение консистентности бренда на производстве.</li>
-                    <li>Нанесение дизайна с учётом технических ограничений станков (допуски, зоны склейки, направление гофры).</li>
-                    <li>Работа с палитрой Pantone, подготовка макетов под флексопечать с разбивкой по цветам.</li>
-                    <li>Коммуникационный дизайн компании: корпоративная полиграфия, презентации и наружная реклама.</li>
-                </ul>
-                <div class="achievement">
-                    <strong>🏆 Ключевые достижения (автоматизация коммуникаций):</strong>
-                    <ul>
-                        <li><strong>Kontur na Kontura v2 (JSX):</strong> Апгрейд скрипта для Illustrator. Превращает пунктирную линию в отдельные контуры для резки на плоттере/лазере. Особенности: пакетная обработка (до 100 путей за раз), каждый штрих состоит ровно из 2 точек с 100% сохранением формы кривых Безье благодаря алгоритму Де Кастельжо, автоматическая сборка в группу.</li>
-                        <li><strong>3D-конфигуратор техкарты:</strong> авторасчет формата, генерация 3D-модели, проверка допусков — время подготовки с 40 до 10 минут, исключение брака.</li>
-                        <li><strong>Калькулятор скорости смены заказа (HTML/JS):</strong> менеджеры рассчитывают сроки за 5 минут вместо 2 часов.</li>
-                    </ul>
+                <div class="timeline-collapse">
+                    <div class="timeline-collapse-inner">
+                        <ul>
+                            <li>Коммуникационный дизайн компании: презентации, наружная реклама и корпоративная полиграфия.</li>
+                            <li>Разработка дизайн-систем и чертежей для гофроупаковки: лотки, самосборные коробки, POS-конструкции.</li>
+                            <li>Согласование технологических карт в 1С:Предприятие и Opti-Corrugated, обеспечение консистентности бренда на производстве.</li>
+                            <li>Нанесение дизайна с учётом технических ограничений станков (допуски, зоны склейки, направление гофры).</li>
+                            <li>Работа с палитрой Pantone, подготовка макетов под флексопечать с разбивкой по цветам.</li>
+                        </ul>
+                        <div class="achievement">
+                            <strong>🏆 Ключевые достижения (автоматизация коммуникаций):</strong>
+                            <ul>
+                                <li><strong>Kontur na Kontura v2 (JSX):</strong> Апгрейд скрипта для Illustrator. Превращает пунктирную линию в отдельные контуры для резки на плоттере/лазере. Особенности: пакетная обработка (до 100 путей за раз), каждый штрих состоит ровно из 2 точек с 100% сохранением формы кривых Безье благодаря алгоритму Де Кастельжо, автоматическая сборка в группу.</li>
+                                <li><strong>3D-конфигуратор техкарты:</strong> авторасчет формата, генерация 3D-модели, проверка допусков — время подготовки с 40 до 10 минут, исключение брака.</li>
+                                <li><strong>Калькулятор скорости смены заказа (HTML/JS):</strong> менеджеры рассчитывают сроки за 5 минут вместо 2 часов.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <button class="timeline-toggle" type="button" aria-expanded="false">
+                    <span class="toggle-text-collapsed">Показать описание</span>
+                    <span class="toggle-text-expanded">Свернуть описание</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
             </div>
         </div>
         <div class="timeline-item">
             <div class="timeline-header">
                 <div class="timeline-title">
                     <h3>Графический дизайнер / Препресс-дизайнер</h3>
-                    <div class="timeline-company">Абсолют-Медиа, Уфа</div>
+                    <div class="timeline-company">Абсолют-Медиа</div>
                 </div>
                 <div class="timeline-date">Декабрь 2025 — Март 2026</div>
             </div>
             <div class="timeline-content">
-                <ul>
-                    <li>Разработка дизайна полиграфической и рекламной продукции (баннеры, листовки, календари, сувениры).</li>
-                    <li>Подготовка макетов к печати (prepress): вылеты, цветовые профили, разрешение, технические требования.</li>
-                    <li>Взаимодействие с типографией, адаптация дизайнов под различные форматы и носители.</li>
-                    <li>Создание живой 3D-визуализации продуктов с помощью AI-инструментов.</li>
-                </ul>
+                <div class="timeline-collapse">
+                    <div class="timeline-collapse-inner">
+                        <ul>
+                            <li>Разработка дизайна полиграфической и рекламной продукции (баннеры, листовки, календари, сувениры).</li>
+                            <li>Подготовка макетов к печати (prepress): вылеты, цветовые профили, разрешение, технические требования.</li>
+                            <li>Взаимодействие с типографией, адаптация дизайнов под различные форматы и носители.</li>
+                            <li>Создание живой 3D-визуализации продуктов с помощью AI-инструментов.</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="timeline-toggle" type="button" aria-expanded="false">
+                    <span class="toggle-text-collapsed">Показать описание</span>
+                    <span class="toggle-text-expanded">Свернуть описание</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
             </div>
         </div>
         <div class="timeline-item">
             <div class="timeline-header">
                 <div class="timeline-title">
                     <h3>Python-разработчик / Автоматизация процессов</h3>
-                    <div class="timeline-company">Частная практика, Уфа</div>
+                    <div class="timeline-company">Частная практика</div>
                 </div>
                 <div class="timeline-date">Август 2025 — Декабрь 2025</div>
             </div>
             <div class="timeline-content">
-                <ul>
-                    <li>Разработка инструментов для оптимизации рутинных задач дизайн-отделов.</li>
-                    <li>Верстка адаптивных лендингов и портфолио на HTML/CSS.</li>
-                </ul>
-                <div class="achievement">
-                    <strong>🏆 Проекты:</strong>
-                    <ul>
-                        <li>Telegram-бот для автоматического наложения изображений на шаблоны, масштабирования и сортировки файлов (сокращение ручной работы на 70%).</li>
-                        <li>Telegram-бот-парсер: мониторинг каналов по ключевым словам, фильтрация контента, формирование сводок.</li>
-                    </ul>
+                <div class="timeline-collapse">
+                    <div class="timeline-collapse-inner">
+                        <ul>
+                            <li>Разработка инструментов для оптимизации рутинных задач дизайн-отделов.</li>
+                            <li>Верстка адаптивных лендингов и портфолио на HTML/CSS.</li>
+                        </ul>
+                        <div class="achievement">
+                            <strong>🏆 Проекты:</strong>
+                            <ul>
+                                <li>Telegram-бот для автоматического наложения изображений на шаблоны, масштабирования и сортировки файлов (сокращение ручной работы на 70%).</li>
+                                <li>Telegram-бот-парсер: мониторинг каналов по ключевым словам, фильтрация контента, формирование сводок.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <button class="timeline-toggle" type="button" aria-expanded="false">
+                    <span class="toggle-text-collapsed">Показать описание</span>
+                    <span class="toggle-text-expanded">Свернуть описание</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
             </div>
         </div>
         <div class="timeline-item">
             <div class="timeline-header">
                 <div class="timeline-title">
-                    <h3>Старший графический дизайнер / Руководитель дизайн-отдела</h3>
+                    <h3>Старший коммуникационный дизайнер / Руководитель отдела</h3>
                     <div class="timeline-company">Студия дизайна «Банан», Уфа</div>
                 </div>
                 <div class="timeline-date">Сентябрь 2019 — Август 2025</div>
             </div>
             <div class="timeline-content">
-                <ul>
-                    <li>Разработка фирменных стилей, логотипов, бренд-гайдов и визуальных систем для компаний из сфер финтеха, ритейла, ИБ, entertainment, ТВ и радио.</li>
-                    <li>Курирование полиграфической, digital- и презентационной продукции. Контроль качества макетов и соблюдения сроков.</li>
-                    <li>Коммуникационный дизайн и управление визуальной экосистемой компании: ведение гайдлайнов бренда, подготовка презентационных материалов, графическое сопровождение HR-стратегии и внутренних коммуникаций, брендирование офисного пространства и разработка корпоративных медиаресурсов.</li>
-                </ul>
-                <div class="achievement">
-                    <strong>🏆 Ключевые достижения:</strong>
-                    <ul>
-                        <li>Оптимизация рабочих процессов с помощью AI-инструментов (ChatGPT, Midjourney) — сокращение времени разработки концептов на 70%.</li>
-                        <li>Создание Telegram-бота для автоматизации рутинных задач дизайнеров.</li>
-                        <li>Выполненные проекты: фирменный стиль к юбилею города, айдентика ТЦ, редизайн регионального ТВ-канала, визуальное продвижение радиостанций.</li>
-                    </ul>
+                <div class="timeline-collapse">
+                    <div class="timeline-collapse-inner">
+                        <ul>
+                            <li>Коммуникационный дизайн и управление визуальной экосистемой компании: ведение гайдлайнов бренда, подготовка презентационных материалов, графическое сопровождение HR-стратегии и внутренних коммуникаций, брендирование офисного пространства и разработка корпоративных медиаресурсов.</li>
+                            <li>Разработка фирменных стилей, логотипов, бренд-гайдов и визуальных систем для компаний из сфер финтеха, ритейла, ИБ, entertainment, ТВ и радио.</li>
+                            <li>Курирование полиграфической, digital- и презентационной продукции. Контроль качества макетов и соблюдения сроков.</li>
+                        </ul>
+                        <div class="achievement">
+                            <strong>🏆 Ключевые достижения:</strong>
+                            <ul>
+                                <li>Оптимизация рабочих процессов с помощью AI-инструментов (ChatGPT, Midjourney) — сокращение времени разработки концептов на 70%.</li>
+                                <li>Создание Telegram-бота для автоматизации рутинных задач дизайнеров.</li>
+                                <li>Выполненные проекты: фирменный стиль к юбилею города, айдентика ТЦ, редизайн регионального ТВ-канала, визуальное продвижение радиостанций.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <button class="timeline-toggle" type="button" aria-expanded="false">
+                    <span class="toggle-text-collapsed">Показать описание</span>
+                    <span class="toggle-text-expanded">Свернуть описание</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
             </div>
         </div>
         <div class="timeline-item">
@@ -740,12 +824,21 @@ footer a:hover { color: var(--text); }
                 <div class="timeline-date">Сентябрь 2017 — Март 2020</div>
             </div>
             <div class="timeline-content">
-                <ul>
-                    <li>Разработка дизайн-системы для образовательного стартап-проекта в партнёрстве с Роснефть, Татнефть, СИБУР, Башнефть.</li>
-                    <li>Полный цикл сопровождения: от концепции и прототипов до финальной реализации и внедрения.</li>
-                    <li>Координация работы с подрядчиками и смежными специалистами (видео, копирайт, маркетинг).</li>
-                    <li>Коммуникационный дизайн бренда: разработка фирменного стиля и айдентики, создание рекламных и маркетинговых материалов, производство корпоративного мерча, оформление сайта, презентаций и внутренних рассылок.</li>
-                </ul>
+                <div class="timeline-collapse">
+                    <div class="timeline-collapse-inner">
+                        <ul>
+                            <li>Разработка дизайн-системы для образовательного стартап-проекта в партнёрстве с Роснефть, Татнефть, СИБУР, Башнефть.</li>
+                            <li>Полный цикл сопровождения: от концепции и прототипов до финальной реализации и внедрения.</li>
+                            <li>Координация работы с подрядчиками и смежными специалистами (видео, копирайт, маркетинг).</li>
+                            <li>Коммуникационный дизайн бренда: разработка фирменного стиля и айдентики, создание рекламных и маркетинговых материалов, производство корпоративного мерча, оформление сайта, презентаций и внутренних рассылок.</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="timeline-toggle" type="button" aria-expanded="false">
+                    <span class="toggle-text-collapsed">Показать описание</span>
+                    <span class="toggle-text-expanded">Свернуть описание</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
             </div>
         </div>
         <div class="timeline-item">
@@ -757,10 +850,19 @@ footer a:hover { color: var(--text); }
                 <div class="timeline-date">Август 2019 — Октябрь 2019</div>
             </div>
             <div class="timeline-content">
-                <ul>
-                    <li>Разработка корпоративных информационно-аналитических систем.</li>
-                    <li>Моделирование и обработка промысловых данных, разработка ПО для мониторинга месторождений.</li>
-                </ul>
+                <div class="timeline-collapse">
+                    <div class="timeline-collapse-inner">
+                        <ul>
+                            <li>Разработка корпоративных информационно-аналитических систем.</li>
+                            <li>Моделирование и обработка промысловых данных, разработка ПО для мониторинга месторождений.</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="timeline-toggle" type="button" aria-expanded="false">
+                    <span class="toggle-text-collapsed">Показать описание</span>
+                    <span class="toggle-text-expanded">Свернуть описание</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
             </div>
         </div>
         <div class="timeline-item">
@@ -772,12 +874,74 @@ footer a:hover { color: var(--text); }
                 <div class="timeline-date">Ноябрь 2018 — Сентябрь 2019</div>
             </div>
             <div class="timeline-content">
-                <ul>
-                    <li>Разработка конфигураций для SCADA-пакетов (C).</li>
-                    <li>Проектирование интерфейсов взаимодействия SCADA ↔ персонал, сбор требований на объектах заказчика.</li>
-                </ul>
+                <div class="timeline-collapse">
+                    <div class="timeline-collapse-inner">
+                        <ul>
+                            <li>Разработка конфигураций для SCADA-пакетов (C).</li>
+                            <li>Проектирование интерфейсов взаимодействия SCADA ↔ персонал, сбор требований на объектах заказчика.</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="timeline-toggle" type="button" aria-expanded="false">
+                    <span class="toggle-text-collapsed">Показать описание</span>
+                    <span class="toggle-text-expanded">Свернуть описание</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Portfolio Section (перемещён сразу после опыта работы) -->
+<section id="portfolio" class="animate-on-scroll" style="background: var(--dark-gray); border-top: 1px solid var(--light-gray); border-bottom: 1px solid var(--light-gray);">
+    <div class="section-header">
+        <h2 class="section-title">Портфолио работ</h2>
+        <p class="section-subtitle">Избранные проекты — брендинг, айдентика, полиграфия, визуальные системы</p>
+    </div>
+    <div class="portfolio-grid">
+        <div class="portfolio-card">
+            <div class="portfolio-preview">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6e5a44155766071.6908bf961c647.gif" alt="Фирменный стиль к юбилею города" loading="lazy">
+            </div>
+            <div class="portfolio-info">
+                <h3>Фирменный стиль к юбилею города</h3>
+                <p>Разработка полной визуальной системы: логотип, цветовая палитра, носители, наружная реклама.</p>
+                <a href="https://www.behance.net/gallery/155766071/450-let-ufe-(firmennyj-stil-logotip)" target="_blank" class="portfolio-link">Смотреть проект →</a>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-preview">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/e2ee87207108023.Y3JvcCw0MTY4LDMyNjAsMCw0NTM.png" alt="Айдентика торгового центра" loading="lazy">
+            </div>
+            <div class="portfolio-info">
+                <h3>Айдентика центра домашних решений</h3>
+                <p>Ребрендинг крупного ТЦ: логотип, навигация, рекламные материалы, digital-присутствие.</p>
+                <a href="https://www.behance.net/gallery/207108023/tc-(brendbuk-logotip-dom-pro-dom)" target="_blank" class="portfolio-link">Смотреть проект →</a>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-preview">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/b8b491155762479.Y3JvcCwxMTAwLDg2MCwwLDE3Ng.jpg" alt="Редизайн регионального ТВ-канала" loading="lazy">
+            </div>
+            <div class="portfolio-info">
+                <h3>Редизайн регионального ТВ-канала</h3>
+                <p>Полное обновление визуального стиля: эфирная графика, заставки, оформление студии.</p>
+                <a href="https://www.behance.net/gallery/155762479/telekanal-bst-(firmennyj-stil-logotip)" target="_blank" class="portfolio-link">Смотреть проект →</a>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-preview">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/9709e2234255781.Y3JvcCwxNTM0LDEyMDAsMzQsMA.png" alt="Фирменный стиль городского рынка" loading="lazy">
+            </div>
+            <div class="portfolio-info">
+                <h3>Фирменный стиль городского рынка</h3>
+                <p>Поиск идентичности в коммуникации для исторического гастропроекта </p>
+                <a href="https://www.behance.net/gallery/234255781/tsk-(brendbuk-logotip-pushkinskij-rynok)" target="_blank" class="portfolio-link">Смотреть проект →</a>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 60px;">
+        <a href="https://www.behance.net/byllez721e" target="_blank" class="cta-button">🎨 Открыть полное портфолио на Behance</a>
     </div>
 </section>
 
@@ -785,7 +949,7 @@ footer a:hover { color: var(--text); }
 <section id="projects" class="animate-on-scroll">
     <div class="section-header">
         <h2 class="section-title">Инструменты масштабирования дизайна</h2>
-        <p class="section-subtitle">Собственные разработки, которые обеспечивают скорость и идеальную консистентность бренд-коммуникаций</p>
+        <p class="section-subtitle">Собственные разработки</p>
     </div>
     <div class="projects-grid">
         <div class="project-card">
@@ -867,66 +1031,13 @@ footer a:hover { color: var(--text); }
     </div>
 </section>
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="animate-on-scroll" style="background: var(--dark-gray); border-top: 1px solid var(--light-gray); border-bottom: 1px solid var(--light-gray);">
-    <div class="section-header">
-        <h2 class="section-title">Портфолио работ</h2>
-        <p class="section-subtitle">Избранные проекты — брендинг, айдентика, полиграфия, визуальные системы</p>
-    </div>
-    <div class="portfolio-grid">
-        <div class="portfolio-card">
-            <div class="portfolio-preview">
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6e5a44155766071.6908bf961c647.gif" alt="Фирменный стиль к юбилею города" loading="lazy">
-            </div>
-            <div class="portfolio-info">
-                <h3>Фирменный стиль к юбилею города</h3>
-                <p>Разработка полной визуальной системы: логотип, цветовая палитра, носители, наружная реклама.</p>
-                <a href="https://www.behance.net/gallery/155766071/450-let-ufe-(firmennyj-stil-logotip)" target="_blank" class="portfolio-link">Смотреть проект →</a>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <div class="portfolio-preview">
-                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/e2ee87207108023.Y3JvcCw0MTY4LDMyNjAsMCw0NTM.png" alt="Айдентика торгового центра" loading="lazy">
-            </div>
-            <div class="portfolio-info">
-                <h3>Айдентика торгового центра</h3>
-                <p>Ребрендинг крупного ТЦ: новый логотип, навигация, рекламные материалы, digital-присутствие.</p>
-                <a href="https://www.behance.net/gallery/207108023/tc-(brendbuk-logotip-dom-pro-dom)" target="_blank" class="portfolio-link">Смотреть проект →</a>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <div class="portfolio-preview">
-                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/b8b491155762479.Y3JvcCwxMTAwLDg2MCwwLDE3Ng.jpg" alt="Редизайн регионального ТВ-канала" loading="lazy">
-            </div>
-            <div class="portfolio-info">
-                <h3>Редизайн регионального ТВ-канала</h3>
-                <p>Полное обновление визуального стиля: эфирная графика, заставки, оформление студии.</p>
-                <a href="https://www.behance.net/gallery/155762479/telekanal-bst-(firmennyj-stil-logotip)" target="_blank" class="portfolio-link">Смотреть проект →</a>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <div class="portfolio-preview">
-                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/e71db9234257065.Y3JvcCwxNDM4LDExMjUsMzIsMA.png" alt="Презентации" loading="lazy">
-            </div>
-            <div class="portfolio-info">
-                <h3>Презентации</h3>
-                <p>Визуальное продвижение и отчетность для компаний.</p>
-                <a href="https://www.behance.net/gallery/234257065/avtonomnye-gruzoperevozki-Evocargo-(prezentacija)" target="_blank" class="portfolio-link">Смотреть проект →</a>
-            </div>
-        </div>
-    </div>
-    <div style="text-align: center; margin-top: 60px;">
-        <a href="https://www.behance.net/byllez721e" target="_blank" class="cta-button">🎨 Открыть полное портфолио на Behance</a>
-    </div>
-</section>
-
 <!-- Contact Section -->
 <section id="contact" class="contact">
     <h2>Готов к новым вызовам</h2>
-    <p>Ищу позицию Коммуникационного дизайнера, где смогу применять уникальное сочетание навыков стратегического дизайна и программирования для создания сильных визуальных систем и оптимизации процессов.</p>
     <div class="contact-info">
         📍 Уфа, Москва<br>
-        🏢 Полная работа в офисе<br>
+        🏢 Офис\гибрид\удаленка<br>
+		📞 +7-937-349-53-08<br>
     </div>
     <div class="contact-buttons">
         <a href="mailto:bullez@mail.ru" class="contact-button"><span>✉️ Написать на Email</span></a>
@@ -1032,6 +1143,15 @@ document.querySelectorAll('.project-card, .portfolio-card, .stat-card').forEach(
     });
     card.addEventListener('mouseleave', () => {
         card.style.transform = '';
+    });
+});
+
+// ===== EXPERIENCE COLLAPSE =====
+document.querySelectorAll('.timeline-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+        const item = button.closest('.timeline-item');
+        const expanded = item.classList.toggle('expanded');
+        button.setAttribute('aria-expanded', expanded ? 'true' : 'false');
     });
 });
 </script>
