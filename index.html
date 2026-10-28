@@ -1,1159 +1,794 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Хайрльварин Булат — Коммуникационный дизайнер. 10+ лет опыта в брендинге, визуальных системах и автоматизации дизайн-процессов (Python, JSX).">
-<meta name="keywords" content="коммуникационный дизайнер, communication designer, design technologist, брендинг, визуальные системы, автоматизация, Python, JSX, Illustrator, дизайн упаковки, prepress, Уфа, Москва">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
 <title>Хайрльварин Булат | Коммуникационный дизайнер</title>
+<meta name="description" content="Коммуникационный дизайнер: брендинг, айдентика, презентации, упаковка. 10 лет опыта, бэкграунд программиста (C#, SCADA, АСУ). Автоматизирую рутину кодом и ИИ: Python, JSX, HTML/JS. Уфа, готов к переезду в Москву.">
+<meta name="keywords" content="коммуникационный дизайнер, communication designer, брендинг, фирменный стиль, айдентика, брендбук, презентация, упаковка, препресс, автоматизация дизайна, Python, JSX, Illustrator, Figma, Уфа, Москва">
+<link rel="canonical" href="https://bullez.github.io/kom_designer/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Булат Хайрльварин">
+<meta property="og:title" content="Хайрльварин Булат | Коммуникационный дизайнер">
+<meta property="og:description" content="10 лет в брендинге и визуальных системах. Автоматизирую рутину кодом и ИИ. Портфолио открывается прямо на сайте.">
+<meta property="og:url" content="https://bullez.github.io/kom_designer/">
+<meta property="og:image" content="https://bullez.github.io/kom_designer/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='15' height='15' fill='%2300a3d9'/%3E%3Crect x='17' width='15' height='15' fill='%23d4006f'/%3E%3Crect y='17' width='15' height='15' fill='%23f5d000'/%3E%3Crect x='17' y='17' width='15' height='15' fill='%231b1d21'/%3E%3C/svg%3E">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
-:root {
-    --black: #0A0A0A;
-    --dark-gray: #121212;
-    --medium-gray: #1A1A1A;
-    --light-gray: #2A2A2A;
-    --accent: #0066FF;
-    --accent-light: #3399FF;
-    --accent-dark: #0047B3;
-    --text: #FFFFFF;
-    --text-muted: #AAAAAA;
-    --success: #00D97E;
-    --purple: #8B5CF6;
-    --pink: #EC4899;
-}
+:root{--bd:#c9ccd1;--paper:#fdfdfc;--k:#1b1d21;--mut:#5b5f66;--ln:#d9dbdf;--c:#00a3d9;--m:#d4006f;--y:#f5d000;--lk:#b8005f;--key1:#eceef1;--key2:#d7dae0;--al0:#f3f4f7;--al1:#e3e5e9;--al2:#c3c7ce;--al3:#a9adb5;--bez:#101114;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bd:#0c0d0f;--paper:#1a1c20;--k:#ecece8;--mut:#9fa3ab;--ln:#2c2f35;--c:#35c2f0;--m:#ff4fa8;--y:#ffd91a;--lk:#ff6db8;--key1:#2c2f36;--key2:#1e2126;--al0:#4a505b;--al1:#3a3e46;--al2:#26292f;--al3:#1c1e23;--bez:#0a0b0d}}
+:root[data-theme="dark"]{--bd:#0c0d0f;--paper:#1a1c20;--k:#ecece8;--mut:#9fa3ab;--ln:#2c2f35;--c:#35c2f0;--m:#ff4fa8;--y:#ffd91a;--lk:#ff6db8;--key1:#2c2f36;--key2:#1e2126;--al0:#4a505b;--al1:#3a3e46;--al2:#26292f;--al3:#1c1e23;--bez:#0a0b0d}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:16px}
+body{margin:0;background:var(--bd);color:var(--k);font:17px/1.6 Onest,system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:44px;position:relative;
+background:
+linear-gradient(var(--k),var(--k)) 0 44px/28px 1px no-repeat,linear-gradient(var(--k),var(--k)) 44px 0/1px 28px no-repeat,
+linear-gradient(var(--k),var(--k)) right 0 top 44px/28px 1px no-repeat,linear-gradient(var(--k),var(--k)) right 44px top 0/1px 28px no-repeat,
+linear-gradient(var(--k),var(--k)) 0 bottom 44px/28px 1px no-repeat,linear-gradient(var(--k),var(--k)) 44px bottom 0/1px 28px no-repeat,
+linear-gradient(var(--k),var(--k)) right 0 bottom 44px/28px 1px no-repeat,linear-gradient(var(--k),var(--k)) right 44px bottom 0/1px 28px no-repeat}
+.sheet{background:var(--paper);padding:56px 56px 40px;display:flex;flex-direction:column;min-height:calc(100vh - 88px)}
+a{color:var(--lk);text-underline-offset:3px}
+.th{position:fixed;right:max(12px,env(safe-area-inset-right,0px));top:calc(12px + env(safe-area-inset-top,0px));background:var(--paper);color:var(--k);border:1px solid var(--k);padding:5px 12px;font:500 13px Onest,sans-serif;cursor:pointer;z-index:60}
+.th:hover{background:var(--k);color:var(--paper)}
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+/* ===== ШАПКА ===== */
+.top{display:flex;gap:28px;align-items:flex-end;flex-wrap:wrap;justify-content:space-between}
+.ph{position:relative;width:118px;height:148px;background:var(--ln);flex:none}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bars{display:flex;height:14px;width:176px;flex:none}.bars i{flex:1}
+h1{font:700 clamp(30px,6vw,58px)/1.05 Unbounded,system-ui,sans-serif;letter-spacing:-.02em;margin:36px 0 12px}
+.role{font:500 clamp(17px,2.4vw,22px)/1.3 Unbounded,sans-serif;margin:0 0 18px;color:var(--m)}
+.lead{max-width:640px;font-size:19px;margin:0}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 0}
+.btn{font:600 15px Onest,sans-serif;background:var(--k);color:var(--paper);border:1px solid var(--k);padding:10px 18px;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--m);border-color:var(--m);color:#fff}
+.btn.ghost{background:transparent;color:var(--k)}
+.btn.ghost:hover{background:var(--k);color:var(--paper);border-color:var(--k)}
 
-body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background-color: var(--black);
-    color: var(--text);
-    line-height: 1.6;
-    overflow-x: hidden;
-    cursor: none;
-}
+/* ===== СЕКЦИИ ===== */
+section{border-top:2px dashed var(--m);margin-top:56px;padding-top:30px}
+h2{font:700 22px/1.2 Unbounded,sans-serif;margin:0 0 8px}
+.sec-lead{color:var(--mut);font-size:15px;margin:0 0 22px;max-width:640px}
 
-/* ===== CUSTOM CURSOR ===== */
-.cursor {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--accent);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transition: all 0.1s ease;
-    mix-blend-mode: difference;
-}
+/* ===== ПОРТФОЛИО ===== */
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pcard{position:relative;display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--ln);padding:0;text-align:left;cursor:pointer;font:inherit;color:inherit;transition:translate .3s,opacity .55s,border-color .2s,box-shadow .28s;opacity:0;translate:0 20px}
+.pcard.in{opacity:1;translate:0 0}
+.pcard:hover{translate:0 -4px;border-color:var(--k);box-shadow:7px 8px 0 -1px var(--c),14px 16px 0 -2px var(--m),0 18px 40px rgba(0,0,0,.15)}
+.pcard:active{translate:0 -1px}
+.pcard:focus-visible{outline:2px solid var(--m);outline-offset:2px}
+.pcard::before,.pcard::after{content:"";position:absolute;width:14px;height:14px;opacity:0;transition:opacity .18s,transform .28s;pointer-events:none;z-index:3}
+.pcard::before{top:-6px;left:-6px;border-top:2px solid var(--m);border-left:2px solid var(--m);transform:translate(-5px,-5px)}
+.pcard::after{bottom:-6px;right:-6px;border-bottom:2px solid var(--c);border-right:2px solid var(--c);transform:translate(5px,5px)}
+.pcard:hover::before,.pcard:hover::after{opacity:1;transform:translate(0,0)}
+.cbar{position:absolute;top:-1px;left:-1px;right:-1px;height:4px;display:flex;z-index:3;pointer-events:none;transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+.pcard:hover .cbar{transform:scaleX(1)}
+.cbar i{flex:1}
+.cbar i:nth-child(1){background:var(--c)}
+.cbar i:nth-child(2){background:var(--m)}
+.cbar i:nth-child(3){background:var(--y)}
+.cbar i:nth-child(4){background:var(--k)}
+.pcover{position:relative;display:block;aspect-ratio:808/632;overflow:hidden;background:var(--ln);border-bottom:1px solid var(--ln)}
+.pcover .cv{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.8);transition:filter .35s,transform .5s}
+.pcard:hover .pcover .cv{filter:saturate(1.06);transform:scale(1.035)}
+.pccap{padding:12px 14px 10px;display:flex;flex-direction:column;gap:2px;flex:1}
+.pcnum{font:700 10px Unbounded,sans-serif;letter-spacing:.16em;color:var(--mut);transition:color .2s}
+.pcard:hover .pcnum{color:var(--m)}
+.pccap b{font:600 15px/1.35 Onest,sans-serif;padding-bottom:2px;background:linear-gradient(var(--m),var(--m)) 0 100%/0 2px no-repeat;transition:background-size .3s}
+.pcard:hover .pccap b{background-size:100% 2px}
+.pccap small{color:var(--mut);font-size:13px}
+.pcopen{margin:0 14px 12px;padding:7px 11px;width:max-content;display:inline-flex;align-items:center;gap:7px;font:600 13px Onest,sans-serif;color:var(--k);border:1px solid var(--ln);transition:background .18s,color .18s,border-color .18s}
+.pcopen .arr{display:inline-block;transition:transform .18s}
+.pcard:hover .pcopen{background:var(--k);border-color:var(--k);color:var(--paper)}
+.pcard:hover .pcopen .arr{transform:translateX(3px)}
 
-.cursor-dot {
-    position: fixed;
-    width: 6px;
-    height: 6px;
-    background: var(--accent-light);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transition: all 0.05s ease;
-}
+/* ===== СЦЕНА: НОУТБУК ===== */
+.scenewrap{height:560vh;position:relative;margin-top:8;border-top:0}
+.scenesticky{position:sticky;top:0;height:100vh;overflow:hidden;display:grid;place-items:center}
+.sct{position:absolute;top:26px;left:0;margin:0;transition:opacity .3s}
+.stage{--W:min(640px,82vw);--H:calc(var(--W)*.625);--t:calc(var(--W)*.016);--D:calc(var(--W)*.66);--th:calc(var(--W)*.022);perspective:2000px;width:100%;height:var(--H);position:relative;display:grid;place-items:center}
+.stage::after{content:"";position:absolute;left:50%;top:calc(50% + var(--H)*.78);width:calc(var(--W)*.9);height:calc(var(--W)*.07);margin-left:calc(var(--W)*-.45);background:radial-gradient(closest-side,rgba(0,0,0,.35),transparent);opacity:var(--sh,0);pointer-events:none}
+.lap{width:var(--W);height:var(--H);position:relative;transform-style:preserve-3d;transform:scale(var(--s,1)) rotateX(calc(var(--tx,-35)*1deg)) rotateY(calc(var(--ry,540)*1deg))}
+.lid{position:absolute;inset:0;transform-origin:50% 100%;transform:rotateX(calc(var(--lid,-90)*1deg));transform-style:preserve-3d}
+.cub{position:absolute;left:50%;top:50%;width:0;height:0;transform-style:preserve-3d}
+.cub>*,.dk>*{position:absolute;backface-visibility:hidden}
+.lf,.lb{width:var(--W);height:var(--H);margin:calc(var(--H)/-2) 0 0 calc(var(--W)/-2);border-radius:1.6% / 2.6%}
+.lf{transform:translateZ(calc(var(--t)/2));background:#07080a;box-shadow:inset 0 0 0 1px #2b2d33}
+.lb{transform:rotateY(180deg) translateZ(calc(var(--t)/2));background:linear-gradient(150deg,#e6e8ec,#b4b9c2 55%,#cfd3d9)}
+.lb::after{content:"";position:absolute;left:50%;top:50%;width:9%;aspect-ratio:1;margin:-4.5% 0 0 -4.5%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#aeb3bb 70%);box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+.lt,.lbm{width:var(--W);height:var(--t);margin:calc(var(--t)/-2) 0 0 calc(var(--W)/-2);background:linear-gradient(#f1f2f5,#bfc3ca)}
+.lt{transform:rotateX(90deg) translateZ(calc(var(--H)/2))}.lbm{transform:rotateX(-90deg) translateZ(calc(var(--H)/2));background:#8e939b}
+.ll,.lr{width:var(--t);height:var(--H);margin:calc(var(--H)/-2) 0 0 calc(var(--t)/-2);background:linear-gradient(90deg,#a9aeb6,#d4d7dc)}
+.ll{transform:rotateY(-90deg) translateZ(calc(var(--W)/2))}.lr{transform:rotateY(90deg) translateZ(calc(var(--W)/2))}
+.cam{position:absolute;left:50%;top:1.2%;width:.8%;aspect-ratio:1;margin-left:-.4%;border-radius:50%;background:#1b2030;box-shadow:0 0 0 1px #2d3140}
+.glare{position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(118deg,rgba(255,255,255,.14),rgba(255,255,255,0) 34%,rgba(255,255,255,0) 70%,rgba(255,255,255,.05))}
+.scr{position:absolute;left:2.2%;right:2.2%;top:3.2%;bottom:3.6%;overflow:hidden;background:#fff;border-radius:3px;touch-action:none;cursor:grab}
+.scr img{display:block;max-width:none;transform-origin:0 0;transform:translate(calc(var(--ix,0)*-1px),calc(var(--iy,0)*1%))}
+.sbar,.hbar{position:absolute;background:rgba(20,22,28,.12);border-radius:5px}
+.sbar{right:2px;top:2px;bottom:12px;width:8px}.hbar{left:2px;right:12px;bottom:2px;height:8px;display:none}
+.sbar b,.hbar b{position:absolute;background:rgba(30,32,38,.62);border-radius:5px;cursor:grab}
+.sbar b{left:0;right:0;top:0;height:20%}.hbar b{top:0;bottom:0;left:0;width:50%}
+.dk{position:absolute;left:50%;top:100%;width:0;height:0;transform-style:preserve-3d;transform:translate3d(0,calc(var(--th)/2),calc(var(--D)/2))}
+.dt,.db{width:var(--W);height:var(--D);margin:calc(var(--D)/-2) 0 0 calc(var(--W)/-2);border-radius:1.2% 1.2% 3% 3%}
+.dt{transform:rotateX(90deg) translateZ(calc(var(--th)/2));background:linear-gradient(#e3e6eb,#c9cdd4 60%,#d6d9de)}
+.db{transform:rotateX(-90deg) translateZ(calc(var(--th)/2));background:#6c7078}
+.df,.dbk{width:var(--W);height:var(--th);margin:calc(var(--th)/-2) 0 0 calc(var(--W)/-2);background:linear-gradient(#cfd3d9,#a3a8b0)}
+.df{transform:translateZ(calc(var(--D)/2));border-radius:0 0 40% 40%/0 0 100% 100%}.dbk{transform:rotateY(180deg) translateZ(calc(var(--D)/2))}
+.dl,.dr{width:var(--D);height:var(--th);margin:calc(var(--th)/-2) 0 0 calc(var(--D)/-2);background:linear-gradient(90deg,#9aa0a8,#c3c7cd)}
+.dl{transform:rotateY(-90deg) translateZ(calc(var(--W)/2))}.dr{transform:rotateY(90deg) translateZ(calc(var(--W)/2))}
+.kb{position:absolute;left:5.5%;right:5.5%;top:6%;height:50%;display:grid;grid-template-columns:repeat(14,1fr);grid-template-rows:.62fr repeat(4,1fr);gap:calc(var(--W)*.0045);padding:calc(var(--W)*.006);background:#121317;border-radius:3px}
+.kb i{background:linear-gradient(#41444b,#25272c);border-radius:2px;box-shadow:0 1px 0 #050506}
+.tp{position:absolute;left:34%;width:32%;bottom:5%;height:28%;border-radius:5px;background:linear-gradient(#d3d6dc,#c2c6cd);box-shadow:inset 0 0 0 1px #9aa0a8,0 1px 0 #fff}
+.sp{position:absolute;top:7%;height:48%;width:3.4%;background:radial-gradient(#7f848c 1px,transparent 1.4px) 0 0/4px 4px}.sp.l{left:1.2%}.sp.r{right:1.2%}
+.zoomctl{position:absolute;top:18px;right:0;display:flex;justify-content:flex-end;gap:8px;align-items:center;transition:opacity .3s;font:600 14px Onest,sans-serif}
+.zoomctl button{background:var(--k);color:var(--paper);border:0;padding:8px 13px;font:inherit;cursor:pointer;min-width:38px}
+.zoomctl span{min-width:48px;text-align:center}
+.scahint,.scachip{position:absolute;left:0;right:0;text-align:center;margin:0}
+.scahint{bottom:30px;color:var(--mut);font-size:15px;transition:opacity .3s}
+.scachip{bottom:18px;opacity:0;transition:opacity .3s;pointer-events:none}.scachip.on{opacity:1;pointer-events:auto}
+.scachip a{display:inline-block;color:var(--lk);font:600 14px Onest,sans-serif}
+.lbox{width:min(1100px,96vw);height:92vh;padding:0;border:2px solid var(--k);background:var(--paper)}
+.lbox::backdrop{background:rgba(0,0,0,.75)}
+.lbox .bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--ln);font-weight:600}
+.lbox .bar button{background:var(--k);color:var(--paper);border:0;padding:7px 14px;cursor:pointer;font:inherit}
+.lbox .in{height:calc(100% - 50px);overflow:auto;background:#fff}.lbox img{display:block;width:100%;height:auto}
+@media(prefers-reduced-motion:reduce){.scenewrap{height:auto}.scenesticky{position:static;height:auto;padding:30px 0}.lap{--lid:0;--tx:-6;--ry:0;--s:1}}
+.dimg{display:block;width:100%;height:auto;margin:0 0 14px;background:var(--ln)}
+.hd{display:flex;flex-direction:column;gap:14px}.sheet{padding-top:34px!important}
+.hdl{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.hdl .ph{width:86px;height:108px;flex:none}
+.hd h1{margin:0 0 6px;font-size:clamp(28px,4.8vw,46px)}
+.hr{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.hr div{padding:12px 14px 12px 0}.hr dt{font:600 12px Onest,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--m);margin:0 0 3px}.hr dd{margin:0;font-size:15px;line-height:1.4}
+.pgrid{grid-template-columns:repeat(auto-fill,minmax(215px,1fr))!important}
+.sheet{min-height:0!important}
+@media(max-width:800px){.hr{grid-template-columns:1fr 1fr}}
+/* ===== КОМНАТА ===== */
+.room{position:relative;max-width:960px;margin:0 auto;border:4px solid #3b2a1e;box-shadow:0 0 0 3px #c9a27e,0 0 0 6px #3b2a1e,0 24px 40px rgba(0,0,0,.18);line-height:0;background:#e6d2ab}
+#gcv{width:100%;height:auto;image-rendering:pixelated;display:block}
+.rtoast{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);background:#fff7e0;border:3px solid #3b2a1e;color:#3b2a1e;font:600 14px/1.35 Onest,sans-serif;padding:9px 14px;text-align:center;max-width:90%}
+.rtoast[hidden]{display:none}.rtoast a{color:#b8005f}
+.gcta{text-align:center;margin:22px 0 6px}
+.gsend{font:700 17px Onest,sans-serif;background:var(--m);color:#fff;border:0;padding:15px 26px;cursor:pointer;display:inline-flex;gap:10px;align-items:center;animation:pls 2s infinite}
+.gsend:hover{background:var(--k)}.gsend:disabled{opacity:.7;animation:none;cursor:default}
+@keyframes pls{0%{box-shadow:0 0 0 0 rgba(212,0,111,.55)}70%{box-shadow:0 0 0 16px rgba(212,0,111,0)}100%{box-shadow:0 0 0 0 rgba(212,0,111,0)}}
+.gmsg{max-width:560px;margin:12px auto 0;text-align:center;color:var(--mut);font-size:14px}
+@media(prefers-reduced-motion:reduce){.gsend{animation:none}}
 
-.cursor.hover {
-    width: 50px;
-    height: 50px;
-    background: rgba(0, 102, 255, 0.1);
-    border-color: var(--accent-light);
-}
+/* ===== ЦИФРЫ ===== */
+.num{display:grid;grid-template-columns:300px 1fr;gap:6px 32px;padding:14px 0;border-bottom:1px solid var(--ln);align-items:baseline}
+.num:last-child{border-bottom:0}
+.num span{font-size:16px}
+.num s{color:var(--mut);text-decoration-color:var(--m);text-decoration-thickness:2px;margin-right:8px;font:500 clamp(16px,2.4vw,22px) Unbounded,sans-serif}
+.num b{font:500 clamp(20px,3vw,28px) Unbounded,sans-serif}
+.num small{display:block;color:var(--mut);font-size:14px;margin-top:2px}
 
-@media (max-width: 768px) {
-    .cursor, .cursor-dot { display: none; }
-    body { cursor: auto; }
-}
+/* ===== ОПЫТ И РЯДЫ ===== */
+.row{display:grid;grid-template-columns:240px 1fr;gap:8px 32px;padding:16px 0;border-bottom:1px solid var(--ln)}
+.row:last-child{border-bottom:0}
+.row h3{font:600 17px/1.35 Onest,sans-serif;margin:0}
+.row h3 small{display:block;color:var(--mut);font:500 14px Onest,sans-serif}
+.row p{margin:0 0 8px}.row p:last-child{margin:0}
+.when{color:var(--mut);font-size:14px}
 
-/* ===== SCROLL PROGRESS ===== */
-.scroll-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--accent), var(--accent-light), var(--purple));
-    z-index: 10000;
-    transition: width 0.1s;
-    box-shadow: 0 0 10px var(--accent);
-}
+/* ===== ИНСТРУМЕНТЫ ===== */
+.tools{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0 0 22px;padding:0;list-style:none}
+.tools li{display:flex;align-items:center;gap:8px}.tools li:before{content:"";width:10px;height:10px;background:var(--c);flex:none}
+.tools li:nth-child(4n+2):before{background:var(--m)}.tools li:nth-child(4n+3):before{background:var(--y)}.tools li:nth-child(4n):before{background:var(--k)}
+.tools-h{font:600 17px Onest,sans-serif;margin:0 0 10px}
 
-/* ===== ANIMATED BACKGROUND ===== */
-.bg-grid {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        linear-gradient(rgba(0,102,255,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,102,255,0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
-    pointer-events: none;
-    z-index: 0;
-}
+/* ===== ФУТЕР ===== */
+footer{margin-top:56px;padding-top:20px;border-top:2px dashed var(--m);font-size:15px;color:var(--mut);margin-top:auto}
+footer .fl{display:flex;flex-wrap:wrap;gap:6px 0}
+footer a{white-space:nowrap}
+footer .fl span{white-space:nowrap}
 
-.floating-blob {
-    position: fixed;
-    border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.15;
-    pointer-events: none;
-    z-index: 0;
-    animation: float 20s ease-in-out infinite;
-}
+/* ===== МОДАЛ КЕЙСА ===== */
+.dlg{border:1px solid var(--k);background:var(--paper);color:var(--k);width:min(1060px,94vw);max-height:92vh;padding:0;overflow:hidden}
+.dlg::backdrop{background:rgba(8,9,12,.6);backdrop-filter:blur(3px)}
+.dlgbar{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;padding:18px 22px 14px;border-bottom:2px dashed var(--m)}
+.dlgbar h3{font:700 19px/1.25 Unbounded,sans-serif;margin:2px 0 0}
+.dlgtag{margin:0;color:var(--mut);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.dlgx{flex:none;font:600 15px Onest,sans-serif;background:var(--k);color:var(--paper);border:0;width:38px;height:38px;cursor:pointer}
+.dlgx:hover{background:var(--m)}
+.dlgbody{overflow-y:auto;max-height:calc(92vh - 170px);padding:20px 22px;overscroll-behavior:contain}
+.cblock{margin:0 0 16px;max-width:820px}
+.cblock b{display:block;font:700 13px Unbounded,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--m);margin:0 0 5px}
+.cblock p{margin:0}
+.cpage{display:block;width:100%;height:auto;border:1px solid var(--ln);margin:0 0 14px;background:var(--ln)}
+.dframe{display:block;width:100%;height:calc(92vh - 200px);border:1px solid var(--ln);background:var(--ln)}
+.dlgfoot{padding:13px 22px;border-top:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.dlgfoot .note{color:var(--mut);font-size:13px}
+.blnk{font:500 13px Onest,sans-serif;color:var(--mut);text-decoration:none;border-bottom:1px solid var(--ln);padding-bottom:1px;white-space:nowrap}
+.blnk:hover{color:var(--lk);border-color:var(--lk)}
 
-.blob-1 { width: 400px; height: 400px; background: var(--accent); top: 10%; right: -100px; animation-delay: 0s; }
-.blob-2 { width: 300px; height: 300px; background: var(--purple); bottom: 20%; left: -100px; animation-delay: -7s; }
-.blob-3 { width: 350px; height: 350px; background: var(--pink); top: 50%; right: 20%; animation-delay: -14s; }
-
-@keyframes float {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    25% { transform: translate(50px, -50px) scale(1.1); }
-    50% { transform: translate(-30px, 30px) scale(0.9); }
-    75% { transform: translate(40px, 20px) scale(1.05); }
-}
-
-/* ===== PARTICLES ===== */
-.particles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
-.particle {
-    position: absolute; width: 2px; height: 2px; background: var(--accent-light); border-radius: 50%; opacity: 0.5;
-    animation: particleFloat 15s linear infinite;
-}
-@keyframes particleFloat {
-    0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-    10% { opacity: 0.5; }
-    90% { opacity: 0.5; }
-    100% { transform: translateY(-100px) rotate(720deg); opacity: 0; }
-}
-
-/* ===== ANIMATIONS ===== */
-@keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes slideInLeft { from { opacity: 0; transform: translateX(-60px); } to { opacity: 1; transform: translateX(0); } }
-@keyframes pulse { 0%, 100% { transform: scale(1); opacity: 0.5; } 50% { transform: scale(1.1); opacity: 0.8; } }
-@keyframes gradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
-@keyframes borderGlow { 0%, 100% { box-shadow: 0 0 20px rgba(0,102,255,0.1); } 50% { box-shadow: 0 0 40px rgba(0,102,255,0.3); } }
-@keyframes glitch { 0%, 100% { transform: translate(0); } 20% { transform: translate(-2px, 2px); } 40% { transform: translate(-2px, -2px); } 60% { transform: translate(2px, 2px); } 80% { transform: translate(2px, -2px); } }
-@keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-@keyframes morph { 0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; } 50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; } }
-@keyframes shimmer { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
-
-.animate-on-scroll { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
-.animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
-
-/* ===== NAVIGATION ===== */
-nav {
-    position: fixed; top: 0; width: 100%; background: rgba(10, 10, 10, 0.85); backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px); z-index: 1000; padding: 18px 5%; border-bottom: 1px solid var(--light-gray); transition: all 0.3s;
-}
-nav.scrolled { padding: 12px 5%; background: rgba(10, 10, 10, 0.95); box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
-nav ul { display: flex; justify-content: center; gap: 35px; list-style: none; flex-wrap: wrap; }
-nav a { color: var(--text-muted); text-decoration: none; font-weight: 500; font-size: 0.95rem; position: relative; transition: color 0.3s; padding: 5px 0; }
-nav a::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 0; height: 2px; background: linear-gradient(90deg, var(--accent), var(--accent-light)); transition: width 0.3s ease; box-shadow: 0 0 10px var(--accent); }
-nav a:hover, nav a.active { color: var(--text); }
-nav a:hover::after, nav a.active::after { width: 100%; }
-
-/* ===== HERO ===== */
-.hero {
-    min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 140px 5% 80px;
-    background: radial-gradient(ellipse at top right, rgba(0,102,255,0.08) 0%, transparent 50%),
-                radial-gradient(ellipse at bottom left, rgba(139,92,246,0.05) 0%, transparent 50%), var(--black);
-    position: relative; overflow: hidden;
-}
-.hero::before {
-    content: ''; position: absolute; top: -30%; right: -10%; width: 700px; height: 700px;
-    background: radial-gradient(circle, rgba(0,102,255,0.12) 0%, transparent 70%);
-    animation: pulse 6s ease-in-out infinite; pointer-events: none;
-}
-.hero-container {
-    max-width: 1300px; width: 100%; display: grid; grid-template-columns: 1fr 1.8fr; gap: 80px; align-items: center; position: relative; z-index: 1;
-}
-.hero-photo { position: relative; animation: slideInLeft 1s ease; }
-.hero-photo-wrapper { position: relative; display: inline-block; }
-.hero-photo img {
-    width: 100%; max-width: 480px; border-radius: 20px; box-shadow: 0 25px 80px rgba(0,0,0,0.6);
-    border: 2px solid var(--light-gray); transition: all 0.4s ease; display: block; position: relative; z-index: 2;
-}
-.hero-photo img:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 35px 100px rgba(0,102,255,0.3); border-color: var(--accent); }
-.hero-photo::after {
-    content: ''; position: absolute; top: 20px; left: 20px; right: -20px; bottom: -20px;
-    border: 2px solid var(--accent); border-radius: 20px; z-index: 1; transition: all 0.4s ease; opacity: 0.5;
-}
-.hero-photo:hover::after { top: 12px; left: 12px; opacity: 1; }
-.hero-photo::before {
-    content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-    width: 120%; height: 120%; background: linear-gradient(135deg, rgba(0,102,255,0.1), rgba(139,92,246,0.1));
-    animation: morph 8s ease-in-out infinite; z-index: 0;
-}
-
-.tech-badge {
-    position: absolute; background: var(--medium-gray); border: 1px solid var(--light-gray); padding: 8px 16px;
-    border-radius: 20px; font-size: 0.8rem; font-weight: 600; color: var(--accent-light); z-index: 3;
-    animation: floatBadge 3s ease-in-out infinite; box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-}
-.tech-badge:nth-child(2) { top: 10%; right: -20px; animation-delay: 0s; }
-.tech-badge:nth-child(3) { bottom: 20%; left: -30px; animation-delay: -1s; }
-.tech-badge:nth-child(4) { bottom: 5%; right: 10%; animation-delay: -2s; }
-@keyframes floatBadge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-
-.hero-content h1 {
-    font-size: 3.5rem; font-weight: 900; letter-spacing: -2px; margin-bottom: 12px; line-height: 1.05;
-    background: linear-gradient(135deg, #fff 0%, var(--accent-light) 50%, var(--purple) 100%);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-    background-size: 200% 200%; animation: gradient 5s ease infinite; position: relative;
-}
-.hero-content h1:hover { animation: gradient 5s ease infinite, glitch 0.3s ease; }
-
-.hero-content .title {
-    font-size: 1.3rem; color: var(--accent-light); font-weight: 600; margin-bottom: 25px;
-    letter-spacing: -0.5px; font-family: 'JetBrains Mono', monospace;
-}
-.hero-content .title::before { content: '> '; color: var(--success); }
-
-.hero-content .description { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 30px; line-height: 1.7; max-width: 650px; }
-
-.hero-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 35px; }
-.tag {
-    padding: 10px 18px; background: var(--medium-gray); border: 1px solid var(--light-gray); border-radius: 8px;
-    font-size: 0.88rem; font-weight: 500; transition: all 0.3s; cursor: default; position: relative; overflow: hidden;
-}
-.tag::before {
-    content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0,102,255,0.2), transparent); transition: left 0.5s;
-}
-.tag:hover::before { left: 100%; }
-.tag:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,102,255,0.2); background: rgba(0,102,255,0.1); }
-
-.salary-block {
-    margin-bottom: 25px; padding: 22px 28px; background: var(--medium-gray); border-radius: 12px;
-    border: 1px solid var(--light-gray); border-left: 4px solid var(--accent); animation: borderGlow 4s ease-in-out infinite;
-    position: relative; overflow: hidden;
-}
-.salary-block::before {
-    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0,102,255,0.05), transparent); animation: shimmer 3s infinite;
-}
-.salary-block .label { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; position: relative; }
-.salary-block .values { display: flex; gap: 30px; flex-wrap: wrap; position: relative; }
-.salary-block .city { display: flex; flex-direction: column; }
-.salary-block .city-name { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 4px; }
-.salary-block .city-salary { font-size: 1.4rem; font-weight: 800; color: var(--accent-light); font-family: 'JetBrains Mono', monospace; }
-
-.relocation-block {
-    margin-bottom: 30px; padding: 20px 24px; background: rgba(0,102,255,0.05); border-radius: 10px;
-    border-left: 4px solid var(--accent); position: relative; overflow: hidden;
-}
-.relocation-block::before {
-    content: '✈️'; position: absolute; top: 10px; right: 15px; font-size: 2rem; opacity: 0.2; animation: floatBadge 2s ease-in-out infinite;
-}
-.relocation-block strong { color: var(--accent-light); display: block; margin-bottom: 8px; font-size: 1rem; position: relative; }
-.relocation-block p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin: 0; position: relative; }
-
-.hero-contacts { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 30px; }
-.hero-contacts a {
-    color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 8px; font-weight: 500;
-    padding: 12px 22px; background: var(--medium-gray); border-radius: 8px; border: 1px solid var(--light-gray);
-    transition: all 0.3s; font-size: 0.95rem; position: relative; overflow: hidden;
-}
-.hero-contacts a::before {
-    content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0; background: var(--accent);
-    border-radius: 50%; transform: translate(-50%, -50%); transition: all 0.5s; z-index: 0;
-}
-.hero-contacts a:hover::before { width: 300px; height: 300px; }
-.hero-contacts a:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,102,255,0.3); }
-.hero-contacts a > * { position: relative; z-index: 1; }
-
-.cta-button {
-    display: inline-block; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
-    color: var(--text); padding: 18px 40px; text-decoration: none; font-weight: 700; font-size: 1.1rem;
-    border-radius: 10px; transition: all 0.3s; border: none; cursor: pointer; box-shadow: 0 10px 30px rgba(0,102,255,0.3);
-    letter-spacing: 0.5px; position: relative; overflow: hidden;
-}
-.cta-button::before {
-    content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); transition: left 0.5s;
-}
-.cta-button:hover::before { left: 100%; }
-.cta-button:hover { transform: translateY(-3px); box-shadow: 0 15px 45px rgba(0,102,255,0.5); }
-
-/* ===== SECTIONS ===== */
-section { padding: 100px 5%; position: relative; z-index: 1; }
-.section-header { margin-bottom: 60px; }
-.section-title { font-size: 2.5rem; font-weight: 800; text-transform: uppercase; letter-spacing: -1px; position: relative; display: inline-block; margin-bottom: 15px; }
-.section-title::after {
-    content: ''; position: absolute; bottom: -12px; left: 0; width: 80px; height: 4px;
-    background: linear-gradient(90deg, var(--accent), var(--accent-light)); border-radius: 2px; box-shadow: 0 0 10px var(--accent);
-}
-.section-subtitle { color: var(--text-muted); font-size: 1.1rem; max-width: 700px; margin-top: 25px; }
-
-/* ===== ABOUT ===== */
-.about { background: var(--dark-gray); border-top: 1px solid var(--light-gray); border-bottom: 1px solid var(--light-gray); }
-.about-content { max-width: 900px; font-size: 1.15rem; color: var(--text-muted); line-height: 1.8; }
-.about-content p { margin-bottom: 25px; }
-.highlight { color: var(--text); font-weight: 600; }
-.highlight-accent { color: var(--accent-light); font-weight: 600; }
-
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; margin-top: 60px; }
-.stat-card {
-    background: var(--medium-gray); padding: 35px 25px; border: 1px solid var(--light-gray); border-radius: 12px;
-    text-align: center; transition: all 0.4s; position: relative; overflow: hidden;
-}
-.stat-card::before {
-    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px;
-    background: linear-gradient(90deg, var(--accent), var(--accent-light)); transform: scaleX(0); transform-origin: left; transition: transform 0.4s;
-}
-.stat-card:hover { border-color: var(--accent); transform: translateY(-8px); box-shadow: 0 15px 40px rgba(0,102,255,0.15); }
-.stat-card:hover::before { transform: scaleX(1); }
-.stat-number { font-size: 3rem; font-weight: 900; color: var(--accent-light); display: block; margin-bottom: 8px; letter-spacing: -1px; font-family: 'JetBrains Mono', monospace; }
-.stat-label { font-size: 0.95rem; color: var(--text-muted); font-weight: 500; }
-
-/* ===== SKILLS ===== */
-.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 60px; }
-.skill-category {
-    background: var(--medium-gray); padding: 40px; border: 1px solid var(--light-gray); border-radius: 16px;
-    transition: all 0.4s; position: relative; overflow: hidden;
-}
-.skill-category::before {
-    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px;
-    background: linear-gradient(90deg, var(--accent), var(--accent-light)); transform: scaleX(0); transform-origin: left; transition: transform 0.4s;
-}
-.skill-category:hover { border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,102,255,0.1); }
-.skill-category:hover::before { transform: scaleX(1); }
-.skill-category h3 { font-size: 1.4rem; margin-bottom: 25px; color: var(--accent-light); display: flex; align-items: center; gap: 12px; font-weight: 700; }
-.skill-list { list-style: none; }
-.skill-list li { padding: 12px 0; color: var(--text-muted); border-bottom: 1px solid var(--light-gray); display: flex; align-items: center; gap: 12px; transition: all 0.3s; font-size: 0.98rem; }
-.skill-list li:last-child { border-bottom: none; }
-.skill-list li:hover { color: var(--text); padding-left: 8px; }
-.skill-list li::before { content: '▸'; color: var(--accent); font-weight: bold; font-size: 1.1rem; }
-
-/* ===== EXPERIENCE ===== */
-.experience { background: var(--dark-gray); }
-.timeline { position: relative; max-width: 1000px; }
-.timeline::before {
-    content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px;
-    background: linear-gradient(180deg, var(--accent) 0%, var(--purple) 50%, var(--light-gray) 100%);
-}
-.timeline-item {
-    background: var(--medium-gray); padding: 40px; border: 1px solid var(--light-gray); border-radius: 16px;
-    margin-bottom: 30px; margin-left: 40px; position: relative; transition: all 0.4s;
-}
-.timeline-item::before {
-    content: ''; position: absolute; left: -46px; top: 40px; width: 14px; height: 14px; background: var(--accent);
-    border-radius: 50%; border: 3px solid var(--dark-gray); box-shadow: 0 0 0 4px rgba(0,102,255,0.2); transition: all 0.3s;
-}
-.timeline-item:hover { border-color: var(--accent); transform: translateX(10px); box-shadow: 0 15px 50px rgba(0,102,255,0.1); }
-.timeline-item:hover::before { background: var(--accent-light); box-shadow: 0 0 0 4px rgba(0,102,255,0.4), 0 0 20px var(--accent); }
-
-.timeline-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap; gap: 15px; }
-.timeline-title h3 { font-size: 1.4rem; margin-bottom: 8px; color: var(--text); font-weight: 700; }
-.timeline-company { color: var(--accent-light); font-weight: 600; font-size: 1.05rem; }
-.timeline-date {
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%); color: var(--text);
-    padding: 8px 16px; border-radius: 8px; font-weight: 600; font-size: 0.88rem; white-space: nowrap; font-family: 'JetBrains Mono', monospace;
-}
-.timeline-content ul { list-style: none; color: var(--text-muted); margin-bottom: 20px; }
-.timeline-content li { padding: 8px 0; padding-left: 20px; position: relative; line-height: 1.6; }
-.timeline-content li::before { content: '•'; position: absolute; left: 0; color: var(--accent); font-size: 1.2rem; }
-
-.achievement {
-    margin-top: 20px; padding: 25px; background: rgba(0,102,255,0.05); border-left: 4px solid var(--accent); border-radius: 0 12px 12px 0;
-}
-.achievement strong { color: var(--text); display: block; margin-bottom: 15px; font-size: 1.05rem; }
-.achievement ul { list-style: none; }
-.achievement li { padding: 8px 0; padding-left: 28px; position: relative; color: var(--text-muted); line-height: 1.6; }
-.achievement li::before { content: '✓'; position: absolute; left: 0; color: var(--success); font-weight: bold; font-size: 1.1rem; }
-
-/* ===== EXPERIENCE COLLAPSE (NEW) ===== */
-.timeline-collapse {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.45s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.timeline-collapse > .timeline-collapse-inner {
-    overflow: hidden;
-    min-height: 0;
-}
-.timeline-item.expanded .timeline-collapse {
-    grid-template-rows: 1fr;
-}
-.timeline-toggle {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 18px;
-    padding: 10px 20px;
-    background: var(--medium-gray);
-    border: 1px solid var(--light-gray);
-    border-radius: 8px;
-    color: var(--text);
-    font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-.timeline-toggle:hover {
-    border-color: var(--accent);
-    background: rgba(0,102,255,0.1);
-    box-shadow: 0 8px 25px rgba(0,102,255,0.2);
-}
-.timeline-toggle .toggle-icon {
-    display: inline-block;
-    transition: transform 0.35s ease;
-    color: var(--accent-light);
-    font-size: 1rem;
-    line-height: 1;
-}
-.timeline-item.expanded .timeline-toggle .toggle-icon {
-    transform: rotate(180deg);
-}
-.timeline-toggle .toggle-text-collapsed { display: inline; }
-.timeline-toggle .toggle-text-expanded { display: none; }
-.timeline-item.expanded .timeline-toggle .toggle-text-collapsed { display: none; }
-.timeline-item.expanded .timeline-toggle .toggle-text-expanded { display: inline; }
-
-/* ===== PROJECTS ===== */
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 60px; }
-.project-card {
-    background: var(--medium-gray); border: 1px solid var(--light-gray); border-radius: 16px;
-    overflow: hidden; transition: all 0.4s; position: relative;
-}
-.project-card::before {
-    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-    background: linear-gradient(90deg, var(--accent), var(--accent-light)); transform: scaleX(0); transition: transform 0.4s; z-index: 2;
-}
-.project-card:hover { border-color: var(--accent); transform: translateY(-8px); box-shadow: 0 25px 60px rgba(0,102,255,0.15); }
-.project-card:hover::before { transform: scaleX(1); }
-
-.project-header { background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%); padding: 30px; color: var(--text); }
-.project-header h3 { font-size: 1.4rem; margin-bottom: 15px; font-weight: 700; }
-.project-tech { display: flex; gap: 8px; flex-wrap: wrap; }
-.project-tech span { background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 6px; font-size: 0.82rem; font-weight: 600; backdrop-filter: blur(10px); }
-
-.project-content { padding: 30px; }
-.project-content p { color: var(--text-muted); margin-bottom: 20px; line-height: 1.7; }
-.project-result { border-top: 1px solid var(--light-gray); padding-top: 20px; margin-top: 20px; }
-.project-result strong { color: var(--accent-light); display: block; margin-bottom: 10px; font-size: 1rem; }
-.project-result ul { list-style: none; color: var(--text-muted); }
-.project-result li { padding: 6px 0; padding-left: 22px; position: relative; font-size: 0.95rem; }
-.project-result li::before { content: '→'; position: absolute; left: 0; color: var(--success); }
-
-.demo-cta {
-    text-align: center; margin-top: 70px; padding: 50px 40px;
-    background: linear-gradient(135deg, rgba(0,102,255,0.08) 0%, rgba(139,92,246,0.04) 100%);
-    border: 2px solid var(--light-gray); border-radius: 20px; transition: all 0.4s; position: relative; overflow: hidden;
-}
-.demo-cta::before {
-    content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
-    background: radial-gradient(circle, rgba(0,102,255,0.05) 0%, transparent 50%); animation: rotate 20s linear infinite;
-}
-.demo-cta:hover { border-color: var(--accent); box-shadow: 0 20px 60px rgba(0,102,255,0.1); }
-.demo-cta h3 { font-size: 1.8rem; margin-bottom: 15px; color: var(--accent-light); position: relative; }
-.demo-cta p { color: var(--text-muted); margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; position: relative; }
-.demo-cta-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 25px; position: relative; }
-
-/* ===== PORTFOLIO ===== */
-.portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 60px; }
-.portfolio-card {
-    background: var(--medium-gray); border: 1px solid var(--light-gray); border-radius: 12px;
-    overflow: hidden; transition: all 0.4s; position: relative;
-}
-.portfolio-card:hover { border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,102,255,0.15); }
-.portfolio-preview { width: 100%; height: 320px; overflow: hidden; position: relative; background: #000; border-radius: 12px 12px 0 0; }
-.portfolio-preview img { width: 100%; height: 100%; object-fit: contain; transition: transform 0.5s; }
-.portfolio-card:hover .portfolio-preview img { transform: scale(1.1); }
-.portfolio-preview::after {
-    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 50%;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8)); pointer-events: none;
-}
-.portfolio-info { padding: 20px; }
-.portfolio-info h3 { font-size: 1.1rem; margin-bottom: 8px; color: var(--text); }
-.portfolio-info p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin-bottom: 15px; }
-.portfolio-link { color: var(--accent-light); text-decoration: none; font-weight: 600; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 5px; transition: all 0.3s; }
-.portfolio-link:hover { color: var(--text); gap: 10px; }
-
-/* ===== CONTACT ===== */
-.contact {
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
-    color: var(--text); text-align: center; padding: 120px 5%; position: relative; overflow: hidden;
-}
-.contact::before {
-    content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 50%);
-    animation: pulse 8s ease-in-out infinite; pointer-events: none;
-}
-.contact h2 { font-size: 3rem; font-weight: 900; margin-bottom: 20px; letter-spacing: -2px; position: relative; }
-.contact > p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; font-weight: 500; opacity: 0.95; position: relative; }
-.contact-info { font-size: 1.3rem; font-weight: 600; margin-bottom: 40px; line-height: 1.8; position: relative; }
-.contact-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; position: relative; }
-.contact-button {
-    display: inline-block; background: var(--black); color: var(--text); padding: 20px 40px;
-    text-decoration: none; font-weight: 700; font-size: 1.1rem; border-radius: 10px; transition: all 0.3s;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3); position: relative; overflow: hidden;
-}
-.contact-button::before {
-    content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0; background: var(--accent);
-    border-radius: 50%; transform: translate(-50%, -50%); transition: all 0.5s; z-index: 0;
-}
-.contact-button:hover::before { width: 400px; height: 400px; }
-.contact-button:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
-.contact-button > * { position: relative; z-index: 1; }
-.contact-button.secondary { background: transparent; border: 2px solid var(--black); }
-.contact-button.secondary:hover { background: var(--black); }
-
-/* ===== FOOTER ===== */
-footer { background: var(--black); padding: 40px 5%; text-align: center; border-top: 1px solid var(--light-gray); position: relative; z-index: 1; }
-footer p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 8px; }
-footer a { color: var(--accent-light); text-decoration: none; transition: color 0.3s; }
-footer a:hover { color: var(--text); }
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 968px) {
-    .hero-container { grid-template-columns: 1fr; gap: 50px; text-align: center; }
-    .hero-content h1 { font-size: 2.8rem; }
-    .hero-photo { order: -1; }
-    .hero-photo img { max-width: 350px; margin: 0 auto; }
-    .hero-tags, .hero-contacts, .salary-block .values { justify-content: center; }
-    .hero-content .description { margin-left: auto; margin-right: auto; }
-    nav ul { gap: 20px; font-size: 0.9rem; }
-    .timeline-item { margin-left: 30px; padding: 30px; }
-    .timeline-item::before { left: -36px; }
-}
-@media (max-width: 600px) {
-    .hero-content h1 { font-size: 2.2rem; }
-    .section-title { font-size: 2rem; }
-    .timeline-header { flex-direction: column; }
-    .contact h2 { font-size: 2.2rem; }
-    .skills-grid, .projects-grid { grid-template-columns: 1fr; }
-    .stat-number { font-size: 2.5rem; }
+/* ===== АДАПТИВ ===== */
+@media(max-width:900px){.pgrid{grid-template-columns:1fr 1fr}.row,.num{grid-template-columns:1fr;gap:2px 0}.row h3{margin-bottom:2px}}
+@media(max-width:700px){.wrap{padding:22px 10px}.sheet{padding:28px 18px 24px}.wrap{background:none}.pgrid{grid-template-columns:1fr}.lead{font-size:17px}.scenewrap{height:300vh}.persp{perspective:1200px}.scrctl{bottom:64px}.scachip a{font-size:12px;padding:8px 12px;white-space:nowrap}.pxroom::before{content:none}.pxbar .btn{flex:1 1 100%;text-align:center}}
+@media(prefers-reduced-motion:reduce){
+*{transition:none!important;animation:none!important}
+.scenewrap{height:auto}
+.scenesticky{position:sticky;top:0;height:100vh;overflow:hidden;display:grid;place-items:start center;padding-top: 20px;}
+.scenesticky .in{min-height:0;height:auto;display:flex;flex-direction:column;align-items:center}
+.persp{position:relative;inset:auto;width:100%;display:grid;place-items:center}
+.lap{position:relative;left:auto;top:auto;margin:0;width:min(620px,92vw);height:auto;aspect-ratio:620/430;transform:rotateX(26deg);opacity:1}
+.lid{transform:translateZ(20px) rotateX(104deg)}
+.l-scr img{transform:none!important;width:100%!important}
+.sbar,.scrctl,.wglow,.pxmail{display:none}
+.scahint{display:none}
+.pcard{opacity:1;translate:none}
+.scachip{opacity:1;transform:translateX(-50%);pointer-events:auto;position:static;margin:20px auto 0;width:max-content}
 }
 </style>
+
+<!-- Счётчик Яндекс Метрики (тот же, что на CV_DOE) -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=113778591', 'ym');
+
+    ym(113778591, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/113778591" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Хайрльварин Булат Рамилевич",
+  "jobTitle": "Коммуникационный дизайнер",
+  "url": "https://bullez.github.io/kom_designer/",
+  "email": "mailto:bullez@mail.ru",
+  "telephone": "+7 937 349-53-08",
+  "address": {"@type": "PostalAddress", "addressLocality": "Уфа", "addressCountry": "RU"},
+  "sameAs": [
+    "https://t.me/bullez",
+    "https://t.me/design_n_code",
+    "https://github.com/bullez",
+    "https://www.behance.net/byllez721e"
+  ],
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "УГНТУ"}
+}
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&display=swap">
 </head>
 <body>
+<button class="th" id="th" type="button">тема</button>
+<div class="wrap"><div class="sheet">
 
-<!-- Custom Cursor -->
-<div class="cursor"></div>
-<div class="cursor-dot"></div>
+<!-- ШАПКА -->
+<header class="hd">
+<div class="hdl">
+<div class="ph"><img src="photo2.png" alt="Булат Хайрльварин, фото"></div>
+<div><h1>Булат Хайрльварин</h1><p class="role">Коммуникационный дизайнер</p></div>
+</div>
+<!--
+<dl class="hr" aria-label="Кратко для HR">
+<div><dt>Опыт</dt><dd>10 лет в дизайне, бэкграунд программиста</dd></div>
+<div><dt>Город</dt><dd>Уфа, готов к переезду в Москву</dd></div>
+<div><dt>Формат</dt><dd>офис, гибрид, удалёнка</dd></div>
+<div><dt>Умею</dt><dd>фирстили, брендбуки, упаковка, препресс, скрипты на Python и JSX</dd></div>
+</dl> -->
+<div class="cta">
+<a class="btn" href="#portfolio">Портфолио</a>
+<a class="btn ghost" href="https://disk.yandex.ru/i/tqB-fSv_sk126w" target="_blank" rel="noopener">Резюме, PDF</a>
+<a class="btn ghost" href="https://t.me/bullez" target="_blank" rel="noopener">Telegram</a>
+<a class="btn ghost" href="tel:+79373495308">+7 937 349-53-08</a>
+<a class="btn ghost" href="mailto:bullez@mail.ru">bullez@mail.ru</a>
+</div>
+</header>
 
-<!-- Scroll Progress -->
-<div class="scroll-progress" id="scrollProgress"></div>
-
-<!-- Background Effects -->
-<div class="bg-grid"></div>
-<div class="floating-blob blob-1"></div>
-<div class="floating-blob blob-2"></div>
-<div class="floating-blob blob-3"></div>
-<div class="particles" id="particles"></div>
-
-<!-- Navigation -->
-<nav id="navbar">
-    <ul>
-        <li><a href="#about">Обо мне</a></li>
-        <li><a href="#skills">Навыки</a></li>
-        <li><a href="#experience">Опыт</a></li>
-        <li><a href="#projects">Инструменты</a></li>
-        <li><a href="#portfolio">Портфолио</a></li>
-        <li><a href="#contact">Контакты</a></li>
-    </ul>
-</nav>
-
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-container">
-        <div class="hero-photo">
-            <div class="hero-photo-wrapper">
-                <img src="photo2.png" alt="Хайрльварин Булат — Коммуникационный дизайнер">
-                <div class="tech-badge">Брендинг</div>
-                <div class="tech-badge">JSX</div>
-                <div class="tech-badge">Python</div>
-            </div>
-        </div>
-        <div class="hero-content">
-            <h1>Хайрльварин Булат</h1>
-            <div class="title">Коммуникационный дизайнер</div>
-            <p class="description">
-                Создаю визуальные системы и бренд-коммуникации. Моя суперсила — умение сочетать художественное видение, системный подход к дизайну и инженерный опыт в оптимизации процессов. 
-        
-            </p>
-            <div class="hero-tags">
-                <span class="tag">Коммуникационный дизайн</span>
-                <span class="tag">Брендинг и айдентика</span>
-                <span class="tag">Дизайн упаковки</span>
-                <span class="tag">Prepress</span>
-                <span class="tag">Figma</span>
-                <span class="tag">Adobe CC</span>
-                <span class="tag">Python / JSX</span>
-                <span class="tag">Автоматизация</span>
-                <span class="tag">AI-инструменты</span>
-            </div>
-
-            <!-- 
-            <div class="salary-block">
-                <div class="label">Сейчас нахожусь</div>
-                <div class="values">
-                    <div class="city">
-                        <span class="city-salary">📍 Уфа</span>
-                    </div>
-                </div>
-            </div> 
-            
-
-            <div class="relocation-block">
-                <strong>✈️ Готов приехать в Москву в течение 1 недели</strong>
-                <p>
-                    В случае положительного решения по офферу, готов выехать в Москву в течение 7 дней с момента подписания договора. 
-                    Вопросы с жильём и логистикой проблем нет. Релокационный пакет не является критическим условием.
-                </p>
-            </div>
--->
-            
-            <div class="hero-contacts">
-                <a href="https://t.me/bullez" target="_blank"><span>💬 Telegram</span></a>
-                <a href="mailto:bullez@mail.ru"><span>✉️ Email</span></a>
-                <a href="tel:+79373495308"><span>📱 +7 (937) 349-53-08</span></a>
-                <a href="https://www.behance.net/byllez721e" target="_blank"><span>🎨 Портфолио</span></a>
-                <a href="https://t.me/design_n_code" target="_blank"><span>✍️ Блог</span></a>
-            </div>
-        </div>
-    </div>
+<!-- ПОРТФОЛИО: ПЕРВЫЙ БЛОК -->
+<section id="portfolio">
+<h2>Портфолио</h2>
+<p class="sec-lead">Нажмите на работу, и страницы кейса откроются здесь же. Переходить на другой сайт не нужно.</p>
+<div class="pgrid" id="pgrid"></div>
 </section>
 
-<!-- About Section -->
-<section id="about" class="about animate-on-scroll">
-    <div class="section-header">
-        <h2 class="section-title">Обо мне</h2>
-        <p class="section-subtitle">Дизайнер, который строит масштабируемые визуальные системы</p>
-    </div>
-    <div class="about-content">
-        <p><span class="highlight">Коммуникационный дизайн для меня — это прежде всего решение бизнес-задач.</span> За 10 лет я прошел путь от графического дизайнера до специалиста, который выстраивает бренд-коммуникации на всех уровнях.</p>
-         Я не только создаю гайдлайны, но и пишу скрипты (JSX, Python), которые автоматизируют рутину, гарантируя, что каждый макет будет соответствовать стандартам бренда без человеческих ошибок.</p>
-        <p>Ищу роль коммуникационного дизайнера в компании, где ценят системный подход, качество исполнения и инновации в рабочих процессах.</p>
-    </div>
-    <div class="stats">
-        <div class="stat-card"><span class="stat-number">10+</span><span class="stat-label">лет в коммуникационном дизайне</span></div>
-        <div class="stat-card"><span class="stat-number">3-5×</span><span class="stat-label">ускорение тиражирования макетов</span></div>
-        <div class="stat-card"><span class="stat-number">70%</span><span class="stat-label">экономия времени на концепты (AI)</span></div>
-        <div class="stat-card"><span class="stat-number">50+</span><span class="stat-label">реализованных бренд-проектов</span></div>
-    </div>
+<!-- СЦЕНА: НОУТБУК -->
+<div class="scenewrap" id="scene" aria-label="Ноутбук раскрывается и показывает лендинг из портфолио">
+<div class="scenesticky"><h2 class="sct" id="sct">Пример разработки лендинга</h2>
+<div class="stage" id="stage"><div class="lap" id="lap">
+<div class="lid"><div class="cub">
+<div class="lf"><div class="scr" id="scr"><img id="lsh" src="assets/landing.webp" alt="Лендинг из портфолио, макет страницы"><i class="sbar" id="sbar"><b id="sth"></b></i><i class="hbar" id="hbar"><b id="hth"></b></i></div><span class="cam"></span><span class="glare"></span></div>
+<div class="lb"></div><div class="lt"></div><div class="lbm"></div><div class="ll"></div><div class="lr"></div>
+</div></div>
+<div class="dk"><div class="dt"><div class="kb" id="kb"></div><div class="tp"></div><div class="sp l"></div><div class="sp r"></div></div><div class="db"></div><div class="df"></div><div class="dbk"></div><div class="dl"></div><div class="dr"></div></div>
+</div></div>
+<div class="zoomctl" id="zc" style="opacity:0"><button id="zo" type="button" aria-label="Уменьшить">−</button><span id="zv">100%</span><button id="zi" type="button" aria-label="Увеличить">+</button><button id="zf" type="button">Открыть крупно</button></div>
+<p class="scahint" id="scahint">Листайте вниз, ноутбук раскроется</p>
+<div class="scachip" id="scachip"><a href="https://www.behance.net/gallery/240619865/lending" target="_blank" rel="noopener">Лендинг на Behance ↗</a></div>
+</div></div>
+<dialog class="lbox" id="lbox"><div class="bar"><span>Лендинг, макет целиком</span><button id="lbx" type="button">Закрыть</button></div><div class="in"><img src="assets/landing.webp" alt="Лендинг из портфолио, макет страницы целиком"></div></dialog>
+
+<!-- ЦИФРЫ -->
+<section>
+<h2>Что меняется на работе</h2>
+<p class="sec-lead">Свои инструменты пишу под задачи производства, где работаю сейчас.</p>
+<div class="num"><span>Макет к производству</span><div><s>30–40 мин</s><b>10 мин</b><small>Скрипты для Illustrator</small></div></div>
+<div class="num"><span>Стоимость и сроки заказа для менеджера</span><div><s>2 часа</s><b>5 мин</b><small>Браузерный калькулятор</small></div></div>
+<div class="num"><span>Скрипт для плоттерной резки</span><div><b>до 100 путей</b> <span>за один запуск</span></div></div>
+<div class="num"><span>Концепты с ИИ</span><div><b>на 70% быстрее</b></div></div>
 </section>
 
-<!-- Skills Section -->
-<section id="skills" class="animate-on-scroll">
-    <div class="section-header">
-        <h2 class="section-title">Навыки и компетенции</h2>
-    </div>
-    <div class="skills-grid">
-        <div class="skill-category">
-            <h3>🛠️ Инструменты и AI</h3>
-            <ul class="skill-list">
-                <li>Adobe Photoshop, Illustrator, InDesign</li>
-                <li>Figma, Corel Draw</li>
-                <li>Битрикс24, Yougile, Trello, Notion</li>
-                <li>AI-инструменты: Midjourney, ChatGPT, Kling, Freepik AI (для ускорения концептов и написания кода)</li>
-                <li>Git, GitHub</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <h3>💻 Автоматизация и код</h3>
-            <ul class="skill-list">
-                <li>JSX / JavaScript (скрипты для Adobe Illustrator/InDesign)</li>
-                <li>Python (Telegram-боты, парсинг, обработка файлов)</li>
-                <li>HTML/CSS (лендинги, веб-конфигураторы продуктов)</li>
-                <li>Автоматизация рутинных процессов в дизайн-отделах</li>
-                <li>1С:Предприятие, Opti-Corrugated (интеграция дизайна и производства)</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <h3>🎨 Коммуникационный дизайн</h3>
-            <ul class="skill-list">
-                <li>Брендинг, айдентика и визуальные системы</li>
-                <li>Дизайн упаковки (гофрокартон, этикетки, POS)</li>
-                <li>Полиграфический дизайн и Prepress (флексо, офсет)</li>
-                <li>Digital-дизайн (баннеры, соцсети, лендинги)</li>
-                <li>3D-визуализация продуктов и пространств (Blender)</li>
-                <li>Навигация и средовой дизайн </li>
-            </ul>
-        </div>
-    </div>
+<!-- ОПЫТ -->
+<section>
+<h2>Опыт</h2>
+<div class="row"><h3>Добрый Картон<small>дизайн-конструктор упаковки и аналитик процессов</small></h3><div><p class="when">2024–2026, Уфа</p><p>Завод гофроупаковки. Делаю дизайн упаковки и разбираю процессы: считаю заготовки, площади и расход материала. Написал скрипты для Illustrator, калькулятор и конфигуратор техкарты, они забрали рутину у дизайнеров и менеджеров.</p></div></div>
+<div class="row"><h3>Абсолют-Медиа<small>графический дизайнер, препресс</small></h3><div><p class="when">дек 2025 – март 2026</p><p>Типография. Подготовка макетов к печати и работа с крупными форматами, скорость в деталях.</p></div></div>
+<div class="row"><h3>Частная практика<small>Python, Telegram-боты, вёрстка</small></h3><div><p class="when">авг–дек 2025</p><p>Сайты, боты и скрипты на заказ. Соединил программирование с дизайном и сделал это основной рабочей связкой.</p></div></div>
+<div class="row"><h3>Студия «Банан»<small>старший дизайнер, руководитель отдела</small></h3><div><p class="when">2019–2025</p><p>Фирменные стили, логотипы и брендбуки для финтеха, ритейла, ТВ, радио и торговых центров. Вёл проекты от идеи до печати и следил за качеством макетов и сроками.</p><p>Победа в народном голосовании конкурса фирстиля к 450-летию Уфы: отрыв от ближайшего конкурента в 3 раза, конкурентов больше 150. <a href="https://www.behance.net/gallery/155766071/450-let-ufe-(firmennyj-stil-logotip)">Кейс на Behance</a>.</p><p>Ребрендинг торгового центра на 45 000 кв.м, от логотипа до вывески на крыше: <a href="https://www.behance.net/gallery/207108023/tc-(brendbuk-logotip-dom-pro-dom)">брендбук на Behance</a>.</p><p>Там же начал отдавать рутину ИИ и ботам: концепты стали делаться на 70% быстрее, Telegram-бот забрал мелкие задачи у дизайнеров.</p></div></div>
+<div class="row"><h3>Нефтяная кухня<small>старший графический дизайнер</small></h3><div><p class="when">2017–2020</p><p>Фирстиль и дизайн-система образовательного проекта в партнёрстве с Роснефтью, Татнефтью, СИБУРом и Башнефтью. Ещё ребрендинг спортивного медиа и афиши для хоккейных клубов и футбольного клуба.</p></div></div>
+<div class="row"><h3>УНТЦ<small>программист, C#</small></h3><div><p class="when">авг–окт 2019</p><p>Разработка на C#.</p></div></div>
+<div class="row"><h3>СКАДтех<small>инженер-программист АСУ</small></h3><div><p class="when">ноя 2018 – сен 2019</p><p>SCADA-системы для промышленных объектов. Инженерная школа: точность, схемы, документация.</p></div></div>
+<div class="row"><h3>УГНТУ<small>магистр</small></h3><div><p class="when">2019</p><p>Автоматизация производственных процессов, информатика и вычислительная техника.</p></div></div>
 </section>
 
-<!-- Experience Section -->
-<section id="experience" class="experience animate-on-scroll">
-    <div class="section-header">
-        <h2 class="section-title">Опыт работы</h2>
-    </div>
-    <div class="timeline">
-        <div class="timeline-item">
-            <div class="timeline-header">
-                <div class="timeline-title">
-                    <h3>Дизайнер-конструктор</h3>
-                    <div class="timeline-company">Добрый картон</div>
-                </div>
-                <div class="timeline-date">Март 2024 — Сентябрь 2026</div>
-            </div>
-            <div class="timeline-content">
-                <div class="timeline-collapse">
-                    <div class="timeline-collapse-inner">
-                        <ul>
-                            <li>Коммуникационный дизайн компании: презентации, наружная реклама и корпоративная полиграфия.</li>
-                            <li>Разработка дизайн-систем и чертежей для гофроупаковки: лотки, самосборные коробки, POS-конструкции.</li>
-                            <li>Согласование технологических карт в 1С:Предприятие и Opti-Corrugated, обеспечение консистентности бренда на производстве.</li>
-                            <li>Нанесение дизайна с учётом технических ограничений станков (допуски, зоны склейки, направление гофры).</li>
-                            <li>Работа с палитрой Pantone, подготовка макетов под флексопечать с разбивкой по цветам.</li>
-                        </ul>
-                        <div class="achievement">
-                            <strong>🏆 Ключевые достижения (автоматизация коммуникаций):</strong>
-                            <ul>
-                                <li><strong>Kontur na Kontura v2 (JSX):</strong> Апгрейд скрипта для Illustrator. Превращает пунктирную линию в отдельные контуры для резки на плоттере/лазере. Особенности: пакетная обработка (до 100 путей за раз), каждый штрих состоит ровно из 2 точек с 100% сохранением формы кривых Безье благодаря алгоритму Де Кастельжо, автоматическая сборка в группу.</li>
-                                <li><strong>3D-конфигуратор техкарты:</strong> авторасчет формата, генерация 3D-модели, проверка допусков — время подготовки с 40 до 10 минут, исключение брака.</li>
-                                <li><strong>Калькулятор скорости смены заказа (HTML/JS):</strong> менеджеры рассчитывают сроки за 5 минут вместо 2 часов.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <button class="timeline-toggle" type="button" aria-expanded="false">
-                    <span class="toggle-text-collapsed">Показать описание</span>
-                    <span class="toggle-text-expanded">Свернуть описание</span>
-                    <span class="toggle-icon">▼</span>
-                </button>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-header">
-                <div class="timeline-title">
-                    <h3>Графический дизайнер / Препресс-дизайнер</h3>
-                    <div class="timeline-company">Абсолют-Медиа</div>
-                </div>
-                <div class="timeline-date">Декабрь 2025 — Март 2026</div>
-            </div>
-            <div class="timeline-content">
-                <div class="timeline-collapse">
-                    <div class="timeline-collapse-inner">
-                        <ul>
-                            <li>Разработка дизайна полиграфической и рекламной продукции (баннеры, листовки, календари, сувениры).</li>
-                            <li>Подготовка макетов к печати (prepress): вылеты, цветовые профили, разрешение, технические требования.</li>
-                            <li>Взаимодействие с типографией, адаптация дизайнов под различные форматы и носители.</li>
-                            <li>Создание живой 3D-визуализации продуктов с помощью AI-инструментов.</li>
-                        </ul>
-                    </div>
-                </div>
-                <button class="timeline-toggle" type="button" aria-expanded="false">
-                    <span class="toggle-text-collapsed">Показать описание</span>
-                    <span class="toggle-text-expanded">Свернуть описание</span>
-                    <span class="toggle-icon">▼</span>
-                </button>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-header">
-                <div class="timeline-title">
-                    <h3>Python-разработчик / Автоматизация процессов</h3>
-                    <div class="timeline-company">Частная практика</div>
-                </div>
-                <div class="timeline-date">Август 2025 — Декабрь 2025</div>
-            </div>
-            <div class="timeline-content">
-                <div class="timeline-collapse">
-                    <div class="timeline-collapse-inner">
-                        <ul>
-                            <li>Разработка инструментов для оптимизации рутинных задач дизайн-отделов.</li>
-                            <li>Верстка адаптивных лендингов и портфолио на HTML/CSS.</li>
-                        </ul>
-                        <div class="achievement">
-                            <strong>🏆 Проекты:</strong>
-                            <ul>
-                                <li>Telegram-бот для автоматического наложения изображений на шаблоны, масштабирования и сортировки файлов (сокращение ручной работы на 70%).</li>
-                                <li>Telegram-бот-парсер: мониторинг каналов по ключевым словам, фильтрация контента, формирование сводок.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <button class="timeline-toggle" type="button" aria-expanded="false">
-                    <span class="toggle-text-collapsed">Показать описание</span>
-                    <span class="toggle-text-expanded">Свернуть описание</span>
-                    <span class="toggle-icon">▼</span>
-                </button>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-header">
-                <div class="timeline-title">
-                    <h3>Старший коммуникационный дизайнер / Руководитель отдела</h3>
-                    <div class="timeline-company">Студия дизайна «Банан», Уфа</div>
-                </div>
-                <div class="timeline-date">Сентябрь 2019 — Август 2025</div>
-            </div>
-            <div class="timeline-content">
-                <div class="timeline-collapse">
-                    <div class="timeline-collapse-inner">
-                        <ul>
-                            <li>Коммуникационный дизайн и управление визуальной экосистемой компании: ведение гайдлайнов бренда, подготовка презентационных материалов, графическое сопровождение HR-стратегии и внутренних коммуникаций, брендирование офисного пространства и разработка корпоративных медиаресурсов.</li>
-                            <li>Разработка фирменных стилей, логотипов, бренд-гайдов и визуальных систем для компаний из сфер финтеха, ритейла, ИБ, entertainment, ТВ и радио.</li>
-                            <li>Курирование полиграфической, digital- и презентационной продукции. Контроль качества макетов и соблюдения сроков.</li>
-                        </ul>
-                        <div class="achievement">
-                            <strong>🏆 Ключевые достижения:</strong>
-                            <ul>
-                                <li>Оптимизация рабочих процессов с помощью AI-инструментов (ChatGPT, Midjourney) — сокращение времени разработки концептов на 70%.</li>
-                                <li>Создание Telegram-бота для автоматизации рутинных задач дизайнеров.</li>
-                                <li>Выполненные проекты: фирменный стиль к юбилею города, айдентика ТЦ, редизайн регионального ТВ-канала, визуальное продвижение радиостанций.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <button class="timeline-toggle" type="button" aria-expanded="false">
-                    <span class="toggle-text-collapsed">Показать описание</span>
-                    <span class="toggle-text-expanded">Свернуть описание</span>
-                    <span class="toggle-icon">▼</span>
-                </button>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-header">
-                <div class="timeline-title">
-                    <h3>Старший графический дизайнер</h3>
-                    <div class="timeline-company">Нефтяная кухня (образовательный проект)</div>
-                </div>
-                <div class="timeline-date">Сентябрь 2017 — Март 2020</div>
-            </div>
-            <div class="timeline-content">
-                <div class="timeline-collapse">
-                    <div class="timeline-collapse-inner">
-                        <ul>
-                            <li>Разработка дизайн-системы для образовательного стартап-проекта в партнёрстве с Роснефть, Татнефть, СИБУР, Башнефть.</li>
-                            <li>Полный цикл сопровождения: от концепции и прототипов до финальной реализации и внедрения.</li>
-                            <li>Координация работы с подрядчиками и смежными специалистами (видео, копирайт, маркетинг).</li>
-                            <li>Коммуникационный дизайн бренда: разработка фирменного стиля и айдентики, создание рекламных и маркетинговых материалов, производство корпоративного мерча, оформление сайта, презентаций и внутренних рассылок.</li>
-                        </ul>
-                    </div>
-                </div>
-                <button class="timeline-toggle" type="button" aria-expanded="false">
-                    <span class="toggle-text-collapsed">Показать описание</span>
-                    <span class="toggle-text-expanded">Свернуть описание</span>
-                    <span class="toggle-icon">▼</span>
-                </button>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-header">
-                <div class="timeline-title">
-                    <h3>Программист-разработчик (C#)</h3>
-                    <div class="timeline-company">Уфимский научно-технический центр (УНТЦ)</div>
-                </div>
-                <div class="timeline-date">Август 2019 — Октябрь 2019</div>
-            </div>
-            <div class="timeline-content">
-                <div class="timeline-collapse">
-                    <div class="timeline-collapse-inner">
-                        <ul>
-                            <li>Разработка корпоративных информационно-аналитических систем.</li>
-                            <li>Моделирование и обработка промысловых данных, разработка ПО для мониторинга месторождений.</li>
-                        </ul>
-                    </div>
-                </div>
-                <button class="timeline-toggle" type="button" aria-expanded="false">
-                    <span class="toggle-text-collapsed">Показать описание</span>
-                    <span class="toggle-text-expanded">Свернуть описание</span>
-                    <span class="toggle-icon">▼</span>
-                </button>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-header">
-                <div class="timeline-title">
-                    <h3>Инженер-программист АСУ</h3>
-                    <div class="timeline-company">СКАДтех</div>
-                </div>
-                <div class="timeline-date">Ноябрь 2018 — Сентябрь 2019</div>
-            </div>
-            <div class="timeline-content">
-                <div class="timeline-collapse">
-                    <div class="timeline-collapse-inner">
-                        <ul>
-                            <li>Разработка конфигураций для SCADA-пакетов (C).</li>
-                            <li>Проектирование интерфейсов взаимодействия SCADA ↔ персонал, сбор требований на объектах заказчика.</li>
-                        </ul>
-                    </div>
-                </div>
-                <button class="timeline-toggle" type="button" aria-expanded="false">
-                    <span class="toggle-text-collapsed">Показать описание</span>
-                    <span class="toggle-text-expanded">Свернуть описание</span>
-                    <span class="toggle-icon">▼</span>
-                </button>
-            </div>
-        </div>
-    </div>
+<!-- ИНСТРУМЕНТЫ -->
+<section>
+<h2>Инструменты, которые я написал</h2>
+<div class="row"><h3>Скрипты для Illustrator<small>Добрый Картон</small></h3><div><p>Пунктир превращается в отдельные контуры, и каждый штрих остаётся точной кривой. Ближайшие концы контуров соединяются сами, с настраиваемым допуском. Площадь выделенного считается в дюймах, сантиметрах и метрах, так менеджер сразу видит расход материала.</p></div></div>
+<div class="row"><h3>Калькулятор скорости смены заказа<small>HTML, JS</small></h3><div><p>Считает производительность линии по длине и ширине изделия и сам находит узкое место. Менеджер называет клиенту реальные сроки.</p><p><a href="demo-calculator.html">Демо калькулятора</a></p></div></div>
+<div class="row"><h3>Конфигуратор техкарты гофроящика<small>HTML, JS, 3D</small></h3><div><p>Типы А1 и В1 по ГОСТ 9142-2014. Считает заготовку, площадь и панели развёртки, строит 3D-модель с направлением гофры, проверяет допуски станков и укладку в пачки и на паллеты.</p><p><a href="demo-configurator.html">Демо конфигуратора</a></p></div></div>
 </section>
 
-<!-- Portfolio Section (перемещён сразу после опыта работы) -->
-<section id="portfolio" class="animate-on-scroll" style="background: var(--dark-gray); border-top: 1px solid var(--light-gray); border-bottom: 1px solid var(--light-gray);">
-    <div class="section-header">
-        <h2 class="section-title">Портфолио работ</h2>
-        <p class="section-subtitle">Избранные проекты — брендинг, айдентика, полиграфия, визуальные системы</p>
-    </div>
-    <div class="portfolio-grid">
-        <div class="portfolio-card">
-            <div class="portfolio-preview">
-                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/010a38155766071.Y3JvcCw4MzMsNjUyLDM1MCww.png" alt="Фирменный стиль к юбилею города" loading="lazy">
-            </div>
-            <div class="portfolio-info">
-                <h3>Фирменный стиль к юбилею города</h3>
-                <p>Разработка полной визуальной системы: логотип, цветовая палитра, носители, наружная реклама.</p>
-                <a href="https://www.behance.net/gallery/155766071/450-let-ufe-(firmennyj-stil-logotip)" target="_blank" class="portfolio-link">Смотреть проект →</a>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <div class="portfolio-preview">
-                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/074d08234255781.Y3JvcCw4NDMsNjYwLDE2Nyww.png" alt="Айдентика торгового центра" loading="lazy">
-            </div>
-            <div class="portfolio-info">
-                <h3>Брендбук для гастропроекта</h3>
-                <p>Концепция и брендинг для Пушкинского рынка.</p>
-                <a href="https://www.behance.net/gallery/234255781/brendbuk-dlja-gastroproekta" target="_blank" class="portfolio-link">Смотреть проект →</a>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <div class="portfolio-preview">
-                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/cd2639257302153.Y3JvcCw4MDgsNjMyLDAsMA.png" alt="Редизайн регионального ТВ-канала" loading="lazy">
-            </div>
-            <div class="portfolio-info">
-                <h3>Key-visuals для девелопера</h3>
-                <p>Рекламный буклет с визуализациями и планировками.</p>
-                <a href="https://www.behance.net/gallery/257302153/buklet-dlja-developera" target="_blank" class="portfolio-link">Смотреть проект →</a>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <div class="portfolio-preview">
-                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/35aacb97307731.Y3JvcCwxMTc2LDkyMCwxMDQsMA.png" alt="Презентации" loading="lazy">
-            </div>
-            <div class="portfolio-info">
-                <h3>Аэропорт Уфа</h3>
-                <p>Бренд-материалы для воздушной гавани.</p>
-                <a href="https://www.behance.net/gallery/97307731/aeroport-ufa" target="_blank" class="portfolio-link">Смотреть проект →</a>
-            </div>
-        </div>
-    </div>
-    <div style="text-align: center; margin-top: 60px;">
-        <a href="https://www.behance.net/byllez721e" target="_blank" class="cta-button">🎨 Открыть полное портфолио на Behance</a>
-    </div>
+<!-- СВОИ ПРОЕКТЫ -->
+<section>
+<h2>Своё, для людей</h2>
+<div class="row"><h3><a href="https://github.com/bullez/Whoosh-Off-to-Print-">Whoosh, Off to Print!</a><small>плагин для Figma</small></h3><div><p>Готовит макет к типографии: сам считает вылеты и безопасную зону, отдаёт PDF в CMYK, чистый SVG для Illustrator и CorelDRAW и картинки с честными 300 dpi. Работает без интернета.</p><p>У платных плагинов число экспортов ограничено, а макетов у меня много. Сделал свой, бесплатный.</p></div></div>
+<div class="row"><h3><a href="https://github.com/bullez/cdr-bridge">cdr-bridge</a><small>конвертер .cdr</small></h3><div><p>Файл из новой версии CorelDRAW не открывается в старой. Программа меняет версию .cdr за пару кликов, слои и текст остаются на месте. Ещё умеет превращать файлы в SVG, PDF, AI и PNG, чтобы открыть их в Illustrator.</p><p>Сделал для коллег и себя, раздаю бесплатно.</p></div></div>
+<div class="row"><h3><a href="https://github.com/bullez/meteomap">meteomap</a><small>погодная страничка</small></h3><div><p>Страничка для друзей из разных городов: погода сейчас и на пять дней, местное время каждого и карта с радаром осадков. Одним взглядом видно, что за окном у всех.</p><p>Для настроения там есть шуточный счётчик цены килограмма бананов.</p></div></div>
+<div class="row"><h3><a href="https://github.com/bullez/tochka.kontakta">Точка контакта</a><small>браузерная игра</small></h3><div><p>Игра про поиск работы с двух сторон стола. Выбираешь соискателя или нанимателя, проходишь шесть этапов, а финал бывает трёх видов: оффер, компромисс или честное «нет».</p><p>Внутри мини-игры, достижения и экран статистики. Сделал ради интереса, это один файл без зависимостей.</p></div></div>
+<div class="row"><h3><a href="https://github.com/bullez/ufa_afisha">Афиша</a><small>сборщик событий на Python</small></h3><div><p>Афиша событий, которую собирает скрипт по списку источников и набору правил. Нужна жене и её подругам, чтобы быстрее выбрать, куда сходить.</p><p>В репозитории больше сотни правок, проект живой и растёт.</p></div></div>
 </section>
 
-<!-- Projects Section -->
-<section id="projects" class="animate-on-scroll">
-    <div class="section-header">
-        <h2 class="section-title">Инструменты масштабирования дизайна</h2>
-        <p class="section-subtitle">Собственные разработки</p>
-    </div>
-    <div class="projects-grid">
-        <div class="project-card">
-            <div class="project-header">
-                <h3>🎨 Kontur na Kontura v2 (JSX)</h3>
-                <div class="project-tech"><span>JSX</span><span>JavaScript</span><span>Automation</span><span>De Casteljau</span></div>
-            </div>
-            <div class="project-content">
-                <p>Апгрейд скрипта для Illustrator. Превращает пунктирную линию в отдельные контуры для резки на плоттере/лазере. Использует алгоритм Де Кастельжо для математически идеального разрезания кривых Безье.</p>
-                <div class="project-result">
-                    <strong>💡 Результат:</strong>
-                    <ul>
-                        <li>Пакетная обработка: выделение до 100 путей с пунктиром за один запуск</li>
-                        <li>Идеальная форма: каждый штрих состоит ровно из 2 точек, кривые сохранены на 100%</li>
-                        <li>Удобство: все созданные штрихи автоматически собираются в одну группу</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-header">
-                <h3>📦 Конфигуратор техкарты гофроящика</h3>
-                <div class="project-tech"><span>HTML</span><span>JavaScript</span><span>3D</span><span>ГОСТ</span></div>
-            </div>
-            <div class="project-content">
-                <p>Полноценный инструмент для автоматического расчета техкарты гофроящика (типы А1/В1 по ГОСТ 9142-2014): авторасчет формата заготовки, генерация 3D-модели, автоматическая проверка на соответствие допускам гофроагрегата и станков высечки, автооптимизация упаковки на паллеты.</p>
-                <div class="project-result">
-                    <strong>💡 Результат:</strong>
-                    <ul>
-                        <li>Сокращение времени подготовки техкарты с 30–40 минут до 10 минут</li>
-                        <li>Полное исключение ошибок из-за человеческого фактора</li>
-                        <li>Автоматическая проверка совместимости со станками</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-header">
-                <h3>⚡ Калькулятор смены заказа</h3>
-                <div class="project-tech"><span>HTML</span><span>JavaScript</span><span>Chart.js</span><span>Аналитика</span></div>
-            </div>
-            <div class="project-content">
-                <p>Расчёт производительности линий гофропереработки (шт/час) на основе длины и ширины изделия. Система автоматически определяет «узкое место» производства по диаграммам скоростей, что позволяет менеджеру сразу называть клиенту реальные сроки.</p>
-                <div class="project-result">
-                    <strong>💡 Результат:</strong>
-                    <ul>
-                        <li>Расчет сроков за 5 минут вместо 2 часов ручного труда</li>
-                        <li>Точность прогнозирования выросла до 95%+</li>
-                        <li>Автоматическое определение узких мест производства</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="project-card">
-            <div class="project-header">
-                <h3>🤖 Telegram-боты на Python</h3>
-                <div class="project-tech"><span>Python</span><span>Telegram API</span><span>Automation</span></div>
-            </div>
-            <div class="project-content">
-                <p>Бот для автоматического наложения изображений на шаблоны, масштабирования, переименования и сортировки файлов. Бот-парсер для мониторинга открытых каналов по ключевым словам с фильтрацией по правилам.</p>
-                <div class="project-result">
-                    <strong>💡 Результат:</strong>
-                    <ul>
-                        <li>Сокращение ручной работы дизайнеров на 70%</li>
-                        <li>Автоматическая фильтрация контента по стоп-словам</li>
-                        <li>Формирование структурированных сводок релевантных публикаций</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="demo-cta">
-        <h3>🎯 Протестируйте инструменты прямо сейчас</h3>
-        <p>Все инструменты работают в браузере — не требуют установки. Откройте любой и оцените, как автоматизация экономит время и гарантирует качество.</p>
-        <div class="demo-cta-buttons">
-            <a href="demo-configurator.html" target="_blank" class="cta-button">📦 Конфигуратор техкарты</a>
-            <a href="demo-calculator.html" target="_blank" class="cta-button" style="background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent) 100%);">⚡ Калькулятор скоростей</a>
-        </div>
-    </div>
+<!-- НАВЫКИ -->
+<section>
+<h2>Чем работаю</h2>
+<p class="tools-h">Код и ИИ</p>
+<ul class="tools"><li>Python</li><li>JavaScript</li><li>C#</li><li>HTML/CSS</li><li>Illustrator JSX</li><li>1С</li><li>Bitrix24</li><li>Qwen</li><li>DeepSeek</li><li>ChatGPT</li><li>Claude</li><li>Grok</li><li>Gemini</li></ul>
+<p class="tools-h">Дизайн</p>
+<ul class="tools"><li>Illustrator</li><li>Photoshop</li><li>InDesign</li><li>CorelDRAW</li><li>Figma</li><li>Blender</li><li>SketchUp</li><li>Tilda</li><li>Pantone</li><li>Prepress</li><li>Midjourney</li><li>Nano Banana</li><li>Freepik AI</li><li>Kling</li></ul>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact">
-    <h2>Готов к новым вызовам</h2>
-    <div class="contact-info">
-        📍 Уфа, Москва<br>
-        🏢 Офис\гибрид\удаленка<br>
-		📞 +7-937-349-53-08<br>
-    </div>
-    <div class="contact-buttons">
-        <a href="mailto:bullez@mail.ru" class="contact-button"><span>✉️ Написать на Email</span></a>
-        <a href="https://t.me/bullez" target="_blank" class="contact-button secondary"><span>💬 Telegram</span></a>
-    </div>
+<!-- КОМНАТА -->
+<section id="invite">
+<div class="room" id="room"><canvas id="gcv" role="img" aria-label="Пиксельная комната: Булат сидит за столом с ноутбуком, смотрит в окно, гладит чёрного кота, берёт книгу с полки"></canvas><div class="rtoast" id="rt" hidden></div></div>
+<p class="gcta"><button class="gsend" id="gsend" type="button"><rect x="1" y="1" width="20" height="14" fill="none" stroke="currentColor" stroke-width="2"/><path d="M1 2l10 8 10-8" fill="none" stroke="currentColor" stroke-width="2"/></svg>Пуньк!</button></p>
+<p class="gmsg" id="gmsg"></p>
 </section>
 
-<!-- Footer -->
+
 <footer>
-    <p>© 2026 Хайрльварин Булат Рамилевич</p>
-    <p>Коммуникационный дизайнер</p>
-    <p style="margin-top: 15px;"><a href="https://www.behance.net/byllez721e" target="_blank">🎨 Портфолио на Behance</a></p>
-    <p style="margin-top: 15px;"><a href="https://disk.yandex.ru/i/tqB-fSv_sk126w" target="_blank">📑 Резюме</a></p>
+<div class="fl">
+<a href="mailto:bullez@mail.ru">bullez@mail.ru</a> <span>·</span>
+<a href="tel:+79373495308">+7 937 349-53-08</a> <span>·</span>
+<a href="https://t.me/bullez" target="_blank" rel="noopener">Telegram</a> <span>·</span>
+<a href="https://t.me/design_n_code" target="_blank" rel="noopener">Канал «Дизайн и Код»</a> <span>·</span>
+<a href="https://github.com/bullez" target="_blank" rel="noopener">GitHub</a> <span>·</span>
+<a href="https://www.behance.net/byllez721e" target="_blank" rel="noopener">Behance</a> <span>·</span>
+<a href="https://disk.yandex.ru/i/tqB-fSv_sk126w" target="_blank" rel="noopener">Резюме, PDF</a>
+</div>
 </footer>
 
+</div></div>
+
+<!-- МОДАЛ КЕЙСА -->
+<dialog class="dlg" id="dlg" aria-labelledby="dlgTitle">
+<div class="dlgbar">
+<div><p class="dlgtag" id="dlgTag"></p><h3 id="dlgTitle"></h3></div>
+<button class="dlgx" id="dlgX" type="button" aria-label="Закрыть">✕</button>
+</div>
+<div class="dlgbody" id="dlgBody"></div>
+<div class="dlgfoot">
+<span class="note" id="dlgNote"></span>
+<a class="blnk" id="dlgGo" target="_blank" rel="noopener">Открыть на Behance ↗</a>
+</div>
+</dialog>
+
 <script>
-// ===== CUSTOM CURSOR =====
-const cursor = document.querySelector('.cursor');
-const cursorDot = document.querySelector('.cursor-dot');
+/* ===== ДАННЫЕ ПОРТФОЛИО ===== */
+var BEH = 'https://www.behance.net/';
+var W = [
+{id:'155766071', t:'Фирстиль 450-летия Уфы', tag:'брендинг, конкурс',
+ url:BEH+'gallery/155766071/450-let-ufe-(firmennyj-stil-logotip)',
+ cover:'assets/covers/155766071.png',
+ text:[['Задача','Конкурс на фирменный стиль празднования 450-летия Уфы. Стиль должен выдержать всё: от флага на стадионе до стакана кофе.'],
+ ['Моя роль','Провел глубокое исследование исторического контекста и локальной идентичности региона. На основе анализа советских изданий по орнаменталистике разработал аутентичные узоры, базирующиеся на традиционных башкирских мотивах. Создал систему знаков и символов, ассоциирующихся с городом и республикой. Разработал логотип как итог глубокого погружения в культуру региона.'],
+ ['Результат','Топ-3 по оценкам жюри, дальше победа в народном голосовании: отрыв от ближайшего конкурента в 3 раза, конкурентов больше 150. Дизайн работает в городе уже пятый год: киоски, транспорт, сувениры, баннеры и онлайн.']]},
+{id:'207108023', t:'ДомПроДом (центр домашних решений)', tag:'ребрендинг ТЦ',
+ url:BEH+'gallery/207108023/tc-(brendbuk-logotip-dom-pro-dom)',
+ cover:'assets/covers/207108023.png', 
+ text:[['Задача','Разработать логотип и брендбук для нового собственника ТЦ под концепцию «центр домашних решений». Главное условие — вписаться в существующие оранжево-красные цвета здания, чтобы клиент сэкономил на ребрендинге. Жесткий дедлайн — 3 недели.'],
+ ['Моя роль','Провел анализ конкурентов и референсов, сгенерировал 20+ концепций в команде за 2 дня; cъездил на объект для оценки масштаба и освещения, сделал 3D-мокапы на фасаде, баннерах и мерче; оперативно адаптировал финальный логотип под новое название «ДомПроДом»; за неделю собрал брендбук, разработал маскота и лично подобрал диоды для подсветки крыши.'],
+ ['Результат','Полный ребрендинг (лого, фирстиль, брендбук, интерьер, экстерьер) под ключ за 3 недели. Дизайн органично вписался в архитектуру, обеспечив клиенту колоссальную экономию на ребрендинге 45 000 кв.м.']]},
+{id:'234255781', t:'Пушкинский рынок', tag:'айдентика',
+ url:BEH+'gallery/234255781/brendbuk-dlja-gastroproekta',
+ cover:'assets/covers/234255781.webp',
+ text:[['Задача','Айдентика для реконструированного рынка. Уровень лучших столичных пространств с опорой на местную историю.'],
+ ['Моя роль','Сделал проект под ключ: изучил исторический контекст и местную идентичность, на их основе выстроил концепцию и собрал полный фирменный стиль с брендбуком — от логотипа до правил использования.'],
+ ['Результат','Система работает от документов до униформы и мерча.']]},
+{id:'155762479', t:'Телеканал БСТ', tag:'ребрендинг',
+ url:BEH+'byllez721e', prof:1,
+ cover:'assets/covers/155762479.png',
+ text:[['Задача','Редизайн логотипа республиканского телеканала с последующей разработкой фирменного стиля.'],
+ ['Моя роль','Разработка логотипа и кастомного орнамента (интеграция национального кода); подбор шрифтов и цветовой палитры; дизайн обложек программ, афиш, полиграфии и мерча; оформление социальных сетей.']]},
+{id:'257669933', t:'Рекламная кампания для приложения', tag:'ИИ-концепт',
+ url:BEH+'gallery/257669933/keshbek-letit-k-tebe-dlja-superappa-(concept)',
+ cover:'assets/covers/257669933.png', 
+ text:[['Задача','«Кэшбэк летит к тебе» — кампания для финтех-супераппа «Ключ». Маскот: сорока Кэша'],
+ ['Моя роль','Дизайн рекламной кампании с маскотом-сорокой Кэшей. Выстроил полный пайплайн: от генерации идей (с использованием ИИ для прототипирования поз) до адаптации под десятки форматов. Обеспечил строгий бренд-контроль — ИИ не рулил процессом, финальный стиль и гайдлайны соблюдались вручную. Создал систему шаблонов, ускорившую выпуск креативов и позволившую провести A/B тесты. Описал неудачные итерации с перегруженным фоном, которые привели к более чистому и конверсионному дизайну.']]},
+{id:'234257065', t:'Evocargo (беспилотные грузоперевозки)', tag:'редизайн фирстиля',
+ url:BEH+'byllez721e', prof:1,
+ cover:'assets/covers/26-26.png',
+ text:[['Задача','Актуализация фирстиля презентации для компании Evocargo, автономная логистика. Беспилотные электромобили для складов и перевозок между хабами.'],
+ ['Моя роль','Полностью отвечал за визуальную трансформацию проекта. Провел аудит исходного стиля, выявил устаревшие элементы и предложил новую концепцию, отвечающую современным стандартам дизайна.']]},
+{id:'257350555', t:'Упаковка из гофрокартона', tag:'дизайн и конструктив под ключ',
+ url:BEH+'byllez721e', prof:1,
+ cover:'assets/covers/257350555.webp',
+  text:[['Задача','Разработать чертеж, дизайн и технологическую карту для создания упаковки FMCG-товаров.'],
+ ['Моя роль','Я отвечал за полный цикл подготовки упаковки к производству — от чертежа до печати: проектировал сложную высечку (лотки, POS-материалы) и чертежи гофроящиков; готовил техдокументацию; адаптировал дизайн под технические реалии станков (учитывал допуски, направление гофры, зоны склейки), чтобы избежать брака при печати; работал с палитрой Pantone (подбор, контроль, подготовка к флексопечати); планировал загрузку цеха (маршрутизация заказов).'],
+ ['Внедрение','Успешный запуск упаковки в серийное производство и вывод готовой продукции на полки магазинов (ритейл).']]},
+{id:'257302153', t:'Рекламная кампания', tag:'презентация, ЖК «33»',
+ url:BEH+'gallery/257302153/buklet-dlja-developera',
+ cover:'assets/covers/257302153.webp',
+ text:[['Задача','Рекламная кампания для жилого комплекса «33» в г. Октябрьском.'],
+ ['Моя роль','Выступил как ведущий дизайнер, полностью отвечающий за визуальную концепцию. Провел анализ референсов и самостоятельно спроектировал структуру, формат и стилистику макета. Создал единую графическую систему: цветовую палитру (тёмно-зелёный/оранжевый), типографику с акцентом на планировки и паттерн плашек, перекликающийся с формой логотипа. Обеспечил целостность подачи информации от концепции до инфраструктуры.']]}
+];
 
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX - 10 + 'px';
-    cursor.style.top = e.clientY - 10 + 'px';
-    cursorDot.style.left = e.clientX - 3 + 'px';
-    cursorDot.style.top = e.clientY - 3 + 'px';
+/* ===== КАРТИНКИ КЕЙСОВ ===== */
+var IM={"155766071": ["cases/ufa450/09.png", "cases/ufa450/01.png", "cases/ufa450/02.png", "cases/ufa450/03.png", "cases/ufa450/04.png", "cases/ufa450/05.png", "cases/ufa450/06.png", "cases/ufa450/07.png", "cases/ufa450/08.png"], "234255781": ["cases/pushkino/01.png", "cases/pushkino/02.png", "cases/pushkino/03.png", "cases/pushkino/04.png", "cases/pushkino/05.png", "cases/pushkino/06.png"], "234257065": ["cases/evocargo/p-01.jpg", "cases/evocargo/p-02.jpg", "cases/evocargo/p-03.jpg", "cases/evocargo/p-04.jpg", "cases/evocargo/p-05.jpg", "cases/evocargo/p-06.jpg", "cases/evocargo/p-07.jpg", "cases/evocargo/p-08.jpg", "cases/evocargo/p-09.jpg", "cases/evocargo/p-10.jpg", "cases/evocargo/p-11.jpg", "cases/evocargo/p-12.jpg", "cases/evocargo/p-13.jpg", "cases/evocargo/p-14.jpg", "cases/evocargo/p-15.jpg", "cases/evocargo/p-16.jpg", "cases/evocargo/p-17.jpg", "cases/evocargo/p-18.jpg", "cases/evocargo/p-19.jpg", "cases/evocargo/p-20.jpg", "cases/evocargo/p-21.jpg", "cases/evocargo/p-22.jpg", "cases/evocargo/p-23.jpg", "cases/evocargo/p-24.jpg"], "257302153": ["cases/zhk33/p-1.jpg", "cases/zhk33/p-2.jpg", "cases/zhk33/p-3.jpg", "cases/zhk33/p-4.jpg", "cases/zhk33/p-5.jpg"], "207108023": ["https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/56b39f207108023.66d8061a21ea8.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f36a68207108023.66d8061a235ba.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e20f91207108023.66d8061a226e7.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6e2a92207108023.66d8061a215d6.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fff1d0207108023.66d8061a21029.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1e86c2207108023.66d8061a22e56.png"], "155762479": ["https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b9df16155762479.64f59bebddf90.png"], "257669933": ["cases/kesh/1.png", "cases/kesh/2.png", "cases/kesh/3.png", "cases/kesh/4.png", "cases/kesh/5.png", "cases/kesh/6.png", "cases/kesh/7.png", "cases/kesh/8.png", "cases/kesh/9.png", "cases/kesh/10.png", "cases/kesh/11.png", "cases/kesh/12.png"], "179302897": ["https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d8f719179302897.64f759a19d379.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ab9a33179302897.64f759a1ac91f.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8654dc179302897.64f759a19f516.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/82b2e0179302897.64f759a19e416.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/befdf8179302897.64f759a1b2ead.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f6cf1f179302897.64f759a1a86c6.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/27917d179302897.64f759a1a1704.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ea1f9e179302897.64f759a1aa939.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/25e915179302897.64f759a1b7044.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b920cc179302897.64f759a1ad883.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/34287c179302897.64f759a1a73e4.png", "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/3e64e4179302897.64f759a1ab87b.png"], "257350555": ["https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/6f2f69257350555.6ad737ff1bd51.png", "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/fc05d1257350555.6ad737ff1c45b.png", "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/a9e645257350555.6ad737ff623ae.png", "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/959434257350555.6ad737ff61f4b.png"]};
+var UR={"155762479": "gallery/155762479/telekanal-bst-%28firmennyj-stil-logotip%29", "179302897": "gallery/179302897/rmpc-%28firmennyj-stil-logotip%29", "234257065": "gallery/234257065/avtonomnye-gruzoperevozki-Evocargo-%28prezentacija%29", "257350555": "gallery/257350555/upakovka"};
+IM['257713493']=['cases/kal/kal_cas.png'];
+W.push({id:'257713493',tag:'ребрендинг фермерского хозяйства',t:'Упаковка для FMCG',url:BEH+'gallery/257713493/rebrending-fermerskogo-hozjajstva',cover:'assets/covers/kal.png', text:[['Задача','Обновить устаревший визуальный стиль клиента (фермерского хозяйства).'],
+ ['Моя роль','Разработал современный логотип: строгий геометричный знак + рукописная типографика (сохранил аутентичность, но добавил статусности). Создал цветовые вариации.']]});
+W.forEach(function(w){w.imgs=IM[w.id]||[];if(UR[w.id]){w.url=BEH+UR[w.id];w.prof=0}});
+var ORD=['155766071','234255781','257302153','257350555','155762479','234257065','257713493','207108023','257669933'];
+W=ORD.map(function(id){return W.filter(function(w){return w.id===id})[0]}).filter(Boolean);
+
+/* ===== СЕТКА ПОРТФОЛИО ===== */
+var grid = document.getElementById('pgrid');
+W.forEach(function(w, i){
+  var b = document.createElement('button');
+  b.className = 'pcard';
+  b.type = 'button';
+  b.setAttribute('aria-haspopup', 'dialog');
+  b.innerHTML = '<span class="cbar" aria-hidden="true"><i></i><i></i><i></i><i></i></span>' +
+    '<span class="pcover"><img class="cv" loading="lazy" src="' + w.cover + '" alt="Обложка кейса: ' + w.t + '"></span>' +
+    '<span class="pccap"><span class="pcnum">' + String(i + 1).padStart(2, '0') + '</span>' +
+    '<b>' + w.t + '</b><small>' + w.tag + '</small></span>' +
+    '<span class="pcopen">Смотреть кейс<span class="arr">→</span></span>';
+  b.addEventListener('click', function(){ openCase(i); });
+  grid.appendChild(b);
 });
-
-document.querySelectorAll('a, button, .tag, .project-card, .portfolio-card').forEach(el => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-});
-
-// ===== SCROLL PROGRESS =====
-window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = (scrollTop / docHeight) * 100;
-    document.getElementById('scrollProgress').style.width = scrollPercent + '%';
-});
-
-// ===== PARTICLES =====
-const particlesContainer = document.getElementById('particles');
-for (let i = 0; i < 30; i++) {
-    const particle = document.createElement('div');
-    particle.className = 'particle';
-    particle.style.left = Math.random() * 100 + '%';
-    particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
-    particle.style.animationDelay = Math.random() * 10 + 's';
-    particle.style.width = (Math.random() * 3 + 1) + 'px';
-    particle.style.height = particle.style.width;
-    particlesContainer.appendChild(particle);
+/* появление карточек при прокрутке */
+var cards = Array.prototype.slice.call(grid.children);
+if('IntersectionObserver' in window){
+  var rio = new IntersectionObserver(function(es){
+    es.forEach(function(en){
+      if(!en.isIntersecting) return;
+      var el = en.target;
+      el.style.transitionDelay = ((cards.indexOf(el) % 3) * 70) + 'ms';
+      el.classList.add('in');
+      setTimeout(function(){ el.style.transitionDelay = ''; }, 800);
+      rio.unobserve(el);
+    });
+  }, {threshold:.12});
+  cards.forEach(function(c){ rio.observe(c); });
+} else {
+  cards.forEach(function(c){ c.classList.add('in'); });
 }
 
-// ===== SCROLL REVEAL =====
-const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-    });
-}, observerOptions);
+/* ===== МОДАЛ ===== */
+var dlg = document.getElementById('dlg'),
+    dlgTag = document.getElementById('dlgTag'),
+    dlgTitle = document.getElementById('dlgTitle'),
+    dlgBody = document.getElementById('dlgBody'),
+    dlgGo = document.getElementById('dlgGo'),
+    dlgNote = document.getElementById('dlgNote');
 
-document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
-
-// ===== ACTIVE NAVIGATION =====
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('nav a');
-
-window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 200) current = section.getAttribute('id');
-    });
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').slice(1) === current) link.classList.add('active');
-    });
-    const navbar = document.getElementById('navbar');
-    if (window.scrollY > 100) navbar.classList.add('scrolled');
-    else navbar.classList.remove('scrolled');
+function openCase(i){
+  var w = W[i];
+  dlgTag.textContent = w.tag;
+  dlgTitle.textContent = w.t;
+  dlgBody.innerHTML = '';
+  (w.text || []).forEach(function(p){
+    var d = document.createElement('div'); d.className = 'cblock';
+    var b = document.createElement('b'); b.textContent = p[0];
+    var s = document.createElement('p'); s.textContent = p[1];
+    d.appendChild(b); d.appendChild(s); dlgBody.appendChild(d);
+  });
+  w.imgs.forEach(function(u,n){
+    var im=document.createElement('img');im.className='dimg';im.loading=n<2?'eager':'lazy';im.decoding='async';
+    im.referrerPolicy='no-referrer';im.alt=w.t+', страница '+(n+1);im.src=u;dlgBody.appendChild(im);
+  });
+  dlgNote.textContent='Листайте вниз, кейс показан страницами.';
+  dlgGo.textContent = 'Этот кейс на Behance ↗';
+  dlgGo.href = w.url;
+  if(dlg.open) return;
+  dlg.showModal();
+  document.documentElement.style.overflow = 'hidden';
+}
+function closeCase(){
+  if(!dlg.open) return;
+  dlg.close();
+}
+document.getElementById('dlgX').addEventListener('click', closeCase);
+dlg.addEventListener('close', function(){
+  dlgBody.innerHTML = '';
+  document.documentElement.style.overflow = '';
+});
+dlg.addEventListener('click', function(e){
+  if(e.target === dlg) closeCase();
 });
 
-// ===== SMOOTH SCROLL =====
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-});
+/* ===== ТЕМА ===== */
+document.getElementById('th').onclick = function(){
+  var r = document.documentElement,
+      d = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme:dark)').matches;
+  r.dataset.theme = d ? 'light' : 'dark';
+};
 
-// ===== TILT EFFECT ON CARDS =====
-document.querySelectorAll('.project-card, .portfolio-card, .stat-card').forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        const rotateX = (y - centerY) / 20;
-        const rotateY = (centerX - x) / 20;
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
-    });
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = '';
-    });
-});
+/* ===== СЦЕНА СО СКРОЛЛА ===== */
+(function(){
+  var sc=document.getElementById('scene'),lap=document.getElementById('lap'),stage=document.getElementById('stage'),im=document.getElementById('lsh'),
+      scr=document.getElementById('scr'),hint=document.getElementById('scahint'),chip=document.getElementById('scachip'),ttl=document.getElementById('sct'),
+      zc=document.getElementById('zc'),zv=document.getElementById('zv'),sth=document.getElementById('sth'),hth=document.getElementById('hth'),
+      sbar=document.getElementById('sbar'),hbar=document.getElementById('hbar'),raf=0,Z=1,IX=0,SR=0,P=0,
+      rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var kb=document.getElementById('kb');
+  [14,14,14,14,[1,1,1,1,6,1,1,1,1]].forEach(function(r,i){
+    if(typeof r==='number'){for(var k=0;k<r;k++)kb.appendChild(document.createElement('i'))}
+    else r.forEach(function(sp){var e=document.createElement('i');if(sp>1)e.style.gridColumn='span '+sp;kb.appendChild(e)})});
+  function cl(v,a,b){return v<a?a:v>b?b:v}
+  function ss(t){t=cl(t,0,1);return t*t*(3-2*t)}
+  function sg(p,a,b){return cl((p-a)/(b-a),0,1)}
+  function geom(){return {top:sc.getBoundingClientRect().top+scrollY,len:Math.max(1,sc.offsetHeight-innerHeight)}}
+  function draw(){
+    raf=0;
+    var r=sc.getBoundingClientRect(),p=rm?.7:cl(-r.top/Math.max(1,r.height-innerHeight),0,1);P=p;
+    var o=ss(sg(p,0,.28)),sp=ss(sg(p,0,.32)),pu=ss(sg(p,.32,.46)),sr=sg(p,.46,.97);SR=sr;
+    var w=lap.offsetWidth,tw=Math.min(sc.clientWidth,(innerHeight-150)/.625),s=1+Math.max(0,tw/w-1)*pu;
+    lap.style.setProperty('--lid',(-90+90*o).toFixed(1));
+    lap.style.setProperty('--ry',(540*(1-sp)).toFixed(1));
+    lap.style.setProperty('--tx',((-32+26*o)*(1-pu)).toFixed(1));
+    lap.style.setProperty('--s',s.toFixed(3));
+    stage.style.setProperty('--sh',(sp*(1-pu)).toFixed(2));
+    var sh=scr.clientHeight,sw=scr.clientWidth;
+    im.style.width=(Z*100)+'%';
+    var ih=im.offsetHeight,mx=(Z-1)*sw;IX=cl(IX,0,mx);
+    lap.style.setProperty('--ix',IX.toFixed(1));
+    lap.style.setProperty('--iy',ih>sh?(-(1-sh/ih)*100*sr).toFixed(2):0);
+    var th=ih>sh?sh/ih:1;sth.style.height=(th*100)+'%';sth.style.top=((1-th)*sr*100)+'%';
+    hbar.style.display=Z>1?'block':'none';hth.style.width=(100/Z)+'%';hth.style.left=(mx?IX/mx*(100-100/Z):0)+'%';
+    hint.style.opacity=p<.04?1:0;ttl.style.opacity=pu>.2?0:1;
+    zc.style.opacity=p>.4?1:0;zc.style.pointerEvents=p>.4?'auto':'none';
+    chip.classList.toggle('on',p>.46||rm);
+    zv.textContent=Math.round(Z*100)+'%';
+  }
+  function kick(){if(!raf)raf=requestAnimationFrame(draw)}
+  function setZ(z){Z=cl(z,1,3);kick()}
+  document.getElementById('zi').onclick=function(){setZ(Z+.5)};
+  document.getElementById('zo').onclick=function(){setZ(Z-.5)};
+  var lb=document.getElementById('lbox');
+  document.getElementById('zf').onclick=function(){lb.showModal()};
+  document.getElementById('lbx').onclick=function(){lb.close()};
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
+  /* перетаскивание экрана: по горизонтали при увеличении */
+  var dr=null;
+  scr.addEventListener('pointerdown',function(e){if(e.target===sth||e.target===hth)return;dr={x:e.clientX,ix:IX};scr.setPointerCapture(e.pointerId);scr.style.cursor='grabbing'});
+  scr.addEventListener('pointermove',function(e){if(dr&&Z>1){IX=dr.ix-(e.clientX-dr.x)/(lap.getBoundingClientRect().width/lap.offsetWidth);kick()}});
+  function end(){dr=null;scr.style.cursor='grab'}scr.addEventListener('pointerup',end);scr.addEventListener('pointercancel',end);
+  /* боковой скроллбар: ползунок двигает страницу */
+  var sd=null;
+  sth.addEventListener('pointerdown',function(e){e.stopPropagation();sd={y:e.clientY,sr:SR};sth.setPointerCapture(e.pointerId)});
+  sth.addEventListener('pointermove',function(e){if(!sd)return;var tr=sbar.clientHeight-sth.offsetHeight,k=(e.clientY-sd.y)/(tr*(lap.getBoundingClientRect().height/lap.offsetHeight)||1);
+    var g=geom();scrollTo({top:g.top+g.len*(.46+.51*cl(sd.sr+k,0,1)),behavior:'instant'})});
+  sth.addEventListener('pointerup',function(){sd=null});
+  var hd=null;
+  hth.addEventListener('pointerdown',function(e){e.stopPropagation();hd={x:e.clientX,ix:IX};hth.setPointerCapture(e.pointerId)});
+  hth.addEventListener('pointermove',function(e){if(!hd)return;var sw=scr.clientWidth,k=(e.clientX-hd.x)/(sw*(lap.getBoundingClientRect().width/lap.offsetWidth)||1);IX=hd.ix+k*sw*Z;kick()});
+  hth.addEventListener('pointerup',function(){hd=null});
+  addEventListener('scroll',kick,{passive:true});addEventListener('resize',kick);
+  im.addEventListener('load',kick);kick();
+})();
 
-// ===== EXPERIENCE COLLAPSE =====
-document.querySelectorAll('.timeline-toggle').forEach(button => {
-    button.addEventListener('click', () => {
-        const item = button.closest('.timeline-item');
-        const expanded = item.classList.toggle('expanded');
-        button.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-    });
-});
+/* ===== КОМНАТА ===== */
+(function(){
+  var cv=document.getElementById('gcv');if(!cv)return;
+  var W=480,HH=270;cv.width=W;cv.height=HH;var c=cv.getContext('2d');
+  var TG='https://t.me/bullez?text='+encodeURIComponent('Здравствуйте, Булат! Нам понравилось ваше портфолио. Хотим пригласить вас на собеседование. Напишите, когда вам удобно.');
+  function R(x,y,w,h,col){c.fillStyle=col;c.fillRect(Math.round(x),Math.round(y),w,h)}
+  function CI(cx,cy,r,col){c.fillStyle=col;for(var y=-r;y<=r;y++){var w=Math.floor(Math.sqrt(r*r-y*y));c.fillRect(cx-w,cy+y,w*2+1,1)}}
+  function mix(a,b,k){return [a[0]+(b[0]-a[0])*k,a[1]+(b[1]-a[1])*k,a[2]+(b[2]-a[2])*k].map(Math.round)}
+  function rgb(a){return 'rgb('+a.join(',')+')'}
+  function cl(v,a,b){return v<a?a:v>b?b:v}
+  function H(a,b){var n=Math.sin(a*127.1+b*311.7)*43758.5453;return n-Math.floor(n)}
+  var OL='#2a1f2e',SKIN='#f0bf98',HAIR='#2e2118',HOOD='#3c6fb5',PANTS='#32384a';
+  var covers={};['155766071','234255781','207108023'].forEach(function(id){var i=new Image();i.src='assets/covers/'+id+'.webp';covers[id]=i});
+  function cover(id,x,y,w,h){
+    R(x-2,y-2,w+4,h+4,'#6e4529');R(x-1,y-1,w+2,h+2,'#f3e6c8');var i=covers[id];
+    if(i&&i.complete&&i.naturalWidth){var k=Math.max(w/i.naturalWidth,h/i.naturalHeight),sw=w/k,sh=h/k;c.drawImage(i,(i.naturalWidth-sw)/2,(i.naturalHeight-sh)/2,sw,sh,x,y,w,h)}else R(x,y,w,h,'#c9b48a')}
+  var t=0,vis=true,DAYK=1;
+  function sky(){
+    var ang=(t/80+.02)*6.2832,h=Math.cos(ang);DAYK=cl(h*2+.7,0,1);
+    var col=mix([29,42,82],[143,208,245],DAYK);
+    if(Math.abs(h)<.4){col=mix(col,[245,165,107],(1-Math.abs(h)/.4)*.55)}
+    R(60,38,76,72,rgb(col));R(60,38,76,24,rgb(mix(col,[255,255,255],.08)));
+    if(DAYK<.7)for(var i=0;i<14;i++)if(H(i,3)>.35)R(62+Math.floor(H(i,1)*72),40+Math.floor(H(i,2)*40),1,1,'rgba(255,255,255,'+(.8*(1-DAYK))+')');
+    var sx=60+(Math.sin(ang)+1)/2*72,sy=44+(1-h)*30;
+    if(h>-.15)CI(Math.round(sx),Math.round(sy),5,'#ffe27a');
+    var mx=60+(Math.sin(ang+Math.PI)+1)/2*72,my=44+(1+h)*30;
+    if(h<.15){CI(Math.round(mx),Math.round(my),4,'#f3f1e0');CI(Math.round(mx)+2,Math.round(my)-1,3,rgb(col))}
+    var cc=DAYK;for(var k=0;k<3;k++){var cx=((t*(2+k)+k*60)%110)-20;R(60+cx,50+k*14,18+k*4,4,'rgba(255,255,255,'+(.8*cc)+')');R(64+cx,47+k*14,10,3,'rgba(255,255,255,'+(.8*cc)+')')}
+    R(60,94,76,16,rgb(mix([20,40,40],[70,140,70],DAYK)));R(60,98,76,12,rgb(mix([16,32,32],[60,120,60],DAYK)));
+    R(98,100,6,10,rgb(mix([40,30,20],[255,225,120],.3+.5*(1-DAYK))));
+  }
+  function wall(){
+    R(0,0,W,172,'#e6d2ab');for(var x=0;x<W;x+=24)R(x,0,12,118,'rgba(255,255,255,.08)');
+    for(var y=6;y<116;y+=12)for(var x=(y/12%2)*12+6;x<W;x+=24)R(x,y,2,2,'rgba(160,110,60,.18)');
+    R(0,118,W,52,'#9c6b45');R(0,116,W,4,'#6e4529');R(0,119,W,1,'#c99a6a');
+    for(var x=12;x<W;x+=48){R(x,124,40,40,'#a9764d');R(x,124,40,1,'#c99a6a');R(x,163,40,1,'#7a4e30')}
+    R(0,168,W,6,'#5e3a24');R(0,168,W,1,'#8a5a3c');
+    R(0,174,W,96,'#b98245');
+    for(var r=0;r<8;r++){var y=174+r*12;R(0,y,W,1,'#a06d38');for(var x=((r%2)*30+H(r,1)*20)|0;x<W;x+=60+((H(x,r)*10)|0))R(x,y,1,12,'#a06d38')}
+    for(var g=0;g<30;g++)R(Math.floor(H(g,7)*W),176+Math.floor(H(g,8)*90),6+(g%4)*3,1,'rgba(120,70,30,.35)');
+    R(0,174,W,14,'rgba(0,0,0,.14)');R(0,174,W,5,'rgba(0,0,0,.12)');
+  }
+  function windowFrame(){
+    sky();
+    R(54,32,88,6,'#7a4a2a');R(54,32,88,2,'#a8743f');R(54,110,88,4,'#7a4a2a');R(52,112,92,4,'#a8743f');R(52,115,92,1,'#5e3a24');
+    R(54,32,6,82,'#7a4a2a');R(136,32,6,82,'#7a4a2a');R(95,38,4,72,'#7a4a2a');R(60,72,76,3,'#7a4a2a');
+    R(60,38,76,1,'rgba(255,255,255,.35)');
+    R(40,26,22,92,'#b6544c');R(136,26,22,92,'#b6544c');
+    for(var i=0;i<4;i++){R(43+i*5,28,2,88,'rgba(0,0,0,.12)');R(139+i*5,28,2,88,'rgba(0,0,0,.12)')}
+    R(36,22,126,4,'#6e4529');R(36,22,126,1,'#a8743f');
+    if(DAYK>.3){c.fillStyle='rgba(255,240,170,'+(.14*DAYK)+')';c.beginPath();c.moveTo(60,112);c.lineTo(136,112);c.lineTo(210,252);c.lineTo(100,252);c.closePath();c.fill()}
+  }
+  function decor(){
+    cover('155766071',172,42,32,24);cover('234255781',212,50,24,30);cover('207108023',246,40,30,22);
+    CI(300,52,12,'#6e4529');CI(300,52,10,'#f4ead0');
+    var d=new Date(),hh=(d.getHours()%12)+d.getMinutes()/60,mm=d.getMinutes();
+    function hand(a,l,col){for(var i=0;i<=l;i++)R(300+Math.round(Math.sin(a)*i),52-Math.round(Math.cos(a)*i),1,1,col)}
+    hand(hh/12*6.2832,5,'#2a1f2e');hand(mm/60*6.2832,8,'#2a1f2e');R(299,51,3,3,'#b6544c');
+    for(var i=0;i<12;i++)R(300+Math.round(Math.sin(i/12*6.2832)*9),52-Math.round(Math.cos(i/12*6.2832)*9),1,1,'#6e4529');
+  }
+  function shelf(){
+    var x=346,y=40;R(x,y,98,118,'#6e4529');R(x+3,y+3,92,112,'#4a2c17');
+    var pal=['#b6544c','#3c6fb5','#e8b04a','#4f8a4f','#8a5a9a','#e4cfa8','#c9784a','#2f6f73'];
+    for(var s=0;s<3;s++){var sy=y+3+s*38,bx=x+5;R(x+3,sy+34,92,4,'#8a5a3c');R(x+3,sy+34,92,1,'#b98245');
+      for(var i=0;i<13;i++){var w=4+Math.floor(H(s,i)*4),h=22+Math.floor(H(i,s+4)*10);if(bx+w>x+92)break;
+        if(s===1&&i>8){break}
+        R(bx,sy+34-h,w,h,pal[(i*3+s*2)%8]);R(bx,sy+34-h,1,h,'rgba(255,255,255,.2)');R(bx+1,sy+34-h+4,w-2,1,'rgba(0,0,0,.25)');bx+=w+((H(i,s)*2)|0);}
+    }
+    R(x+60,y+41+34-14,10,14,'#e4cfa8');R(x+62,y+41+34-12,6,2,'#2a1f2e');R(x+70,y+41+34-10,6,10,'#b6544c');
+    R(x+6,y+3+76+34-20,14,20,'#6e4529');R(x+8,y+3+76+34-18,10,16,'#e8b04a');
+    var sw=Math.round(Math.sin(t*1.5)*1);
+    R(x+66,y-16,10,12,'#c9784a');R(x+67,y-18,2,6,'#4f8a4f');R(x+71+sw,y-20,2,8,'#4f8a4f');R(x+69,y-22,2,8,'#5faa5f');R(x+73+sw,y-16,3,3,'#5faa5f');
+  }
+  function rug(){
+    R(66,210,200,50,'#7a2e2e');R(70,214,192,42,'#b24a4a');R(76,220,180,30,'#e8b04a');R(80,224,172,22,'#b24a4a');
+    for(var i=0;i<9;i++){R(88+i*18,230,8,8,'#e8b04a');R(90+i*18,232,4,4,'#7a2e2e')}
+    for(var f=0;f<10;f++){R(66,212+f*5,2,2,'#e8d8a0');R(264,212+f*5,2,2,'#e8d8a0')}
+  }
+  function chair(){R(284,96,40,44,OL);R(286,98,36,40,'#2f6f73');R(286,98,36,3,'#4a9aa0');R(300,138,8,26,'#555');R(290,160,28,3,'#444')}
+  var laptopMsg=0;
+  function desk(){
+    R(172,176,164,2,'rgba(0,0,0,.25)');
+    R(172,128,164,8,'#9a6236');R(172,128,164,2,'#c58f4f');R(172,134,164,2,'#6e4529');
+    R(176,136,156,34,'#7a4a2a');R(176,136,156,2,'#5e3a24');
+    R(180,142,50,24,'#6e4529');R(182,144,46,20,'#8a5a3c');R(200,152,10,3,'#e8b04a');
+    R(174,170,8,6,'#5e3a24');R(326,170,8,6,'#5e3a24');
+    /* ноутбук */
+    var lx=196,ly=92;R(lx-1,ly-1,58,38,OL);R(lx,ly,56,36,'#1c1d22');R(lx+2,ly+2,52,30,'#0f1b2e');
+    if(laptopMsg>0){R(lx+2,ly+2,52,30,'#2a8fd8');R(lx+8,ly+8,40,8,'#fff');R(lx+8,ly+19,26,6,'#d7edfb');R(lx+8,ly+8,3,8,'#2a8fd8');if(Math.floor(t*4)%2)R(lx+44,ly+4,6,6,'#ff5a5a')}
+    else for(var i=0;i<7;i++){var ww=8+Math.floor(H(i+Math.floor(t*1.5),5)*30);R(lx+4+(i%3)*3,ly+4+i*4,ww,2,['#6cc4ff','#ffd27a','#9be08f','#ff9ab6'][i%4])}
+    R(lx,ly,56,1,'rgba(255,255,255,.2)');R(lx-3,ly+36,62,4,'#d6d9de');R(lx-3,ly+36,62,1,'#fff');R(lx+22,ly+37,12,1,'#9aa0a8');R(lx-2,ly+40,60,1,'rgba(0,0,0,.25)');
+    /* кружка */
+    R(300,118,10,10,OL);R(301,119,8,8,'#f4f1e6');R(310,121,3,5,OL);R(302,120,6,2,'#6b3f1d');
+    if(DAYK>-1)for(var s=0;s<3;s++){var yy=(t*10+s*7)%18;R(304+Math.round(Math.sin(t*2+s)*2),115-yy,1,2,'rgba(255,255,255,'+(.5-yy/40)+')')}
+    /* лампа */
+    R(176,124,12,4,OL);R(178,112,2,12,'#444');R(178,110,16,2,'#444');R(190,110,12,6,OL);R(191,111,10,4,'#e8b04a');
+    /* блокнот и стикеры */
+    R(228,122,12,6,'#f3e6c8');R(230,124,8,1,'#b8a888');R(316,121,8,7,'#ffe066');R(318,123,4,1,'#b89a30');
+  }
+  function plant(){ /* y основания 244 */
+    var sw=Math.sin(t*1.2);R(22,222,24,22,OL);R(24,224,20,18,'#c9784a');R(24,224,20,3,'#e09a68');R(22,222,24,2,'#e09a68');
+    for(var i=0;i<6;i++){var a=-1+i*.4,l=18+H(i,2)*10,x1=34+Math.round(Math.sin(a+sw*.05)*l*.6),y1=222-Math.round(Math.cos(a)*l);
+      for(var k=0;k<=l;k+=2){var px=34+Math.round((x1-34)*k/l),py=222-Math.round((222-y1)*k/l);R(px-2,py-2,5,4,k>l*.6?'#5faa5f':'#3f8a4f')}}
+  }
+  function flamp(){R(448,150,2,92,'#444');R(440,240,18,4,OL);R(441,240,16,3,'#555');R(436,130,26,22,OL);R(438,132,22,18,'#ffe9a8');R(438,132,22,3,'#fff6d0');
+    var a=(1-DAYK)*.5+.1,g=c.createRadialGradient(449,141,2,449,141,40);g.addColorStop(0,'rgba(255,225,130,'+a+')');g.addColorStop(1,'rgba(255,225,130,0)');c.fillStyle=g;c.fillRect(400,100,100,90)}
+  /* спрайты */
+  function P(list,fx,fy,flip){
+    function pr(l,o){l.forEach(function(p){if(!p[4])return;var x=flip?-p[0]-p[2]:p[0];R(fx+x-o,fy+p[1]-o,p[2]+o*2,p[3]+o*2,o?OL:p[4])})}
+    pr(list,1);pr(list,0)}
+  function body(pose,dir,f){
+    var L=[];
+    if(pose==='sit'){
+      var bob=Math.floor(t*6)%2;L=[[-5,-31,10,5,HAIR],[-4,-27,8,8,SKIN],[(dir==='l'?-3:1),-24,1,2,'#222'],[(dir==='l'?0:3),-24,1,2,'#222'],[-5,-19,10,19,HOOD],[-8,-18,3,12,HOOD],[5,-18,3,12,HOOD],[-8,-8+bob,3,2,SKIN],[5,-8-bob,3,2,SKIN]];return L}
+    if(pose==='crouch'){return [[-5,-22,10,5,HAIR],[-4,-18,8,8,SKIN],[-2,-15,1,2,'#222'],[1,-15,1,2,'#222'],[-5,-10,10,8,HOOD],[-9,-10,3,6,HOOD],[-10,-6,4,3,SKIN],[-5,-2,10,2,PANTS]]}
+    if(dir==='u'){return [[-5,-31,10,12,HAIR],[-5,-19,10,10,HOOD],[-7,-18,2,9,HOOD],[5,-18,2,9,HOOD],[-4,-9,4,7,PANTS],[0,-9,4,7,PANTS],[-5,-2,5,2,'#222'],[0,-2,5,2,'#222']]}
+    if(dir==='l'||dir==='r'){var s=f?2:-2;return [[-4,-31,8,5,HAIR],[-3,-27,8,8,SKIN],[3,-24,1,2,'#222'],[-4,-19,8,11,HOOD],[-2+s,-18,3,9,HOOD],[-2+s,-9,3,2,SKIN],[-3-s,-9,3,7,PANTS],[-1+s,-9,3,7,PANTS],[-4-s,-2,5,2,'#222'],[-1+s,-2,5,2,'#222']]}
+    var lf=f?1:0;
+    return [[-5,-31,10,5,HAIR],[-4,-27,8,8,SKIN],[-2,-24,1,2,'#222'],[1,-24,1,2,'#222'],[-5,-19,10,10,HOOD],[-7,-18,2,9,HOOD],[5,-18,2,9,HOOD],[-7,-9,2,2,SKIN],[5,-9,2,2,SKIN],[-4,-9,4,7-lf,PANTS],[0,-9,4,6+lf,PANTS],[-5,-2-lf,5,2,'#222'],[0,-2+lf,5,2,'#222']];
+  }
+  var B={x:300,y:127,dir:'l',pose:'sit',wf:0,st:0,tm:0,path:[],name:'work',hold:8,pop:0};
+  var CAT={x:130,y:240,awake:0,f:1};
+  var STEPS=['work','window','cat','shelf','chair'];
+  var WP={window:[[300,194],[98,194]],cat:[[98,194],[96,240],[150,240]],shelf:[[150,240],[150,196],[392,196]],chair:[[392,196],[300,196]]};
+  function nextState(){
+    var i=STEPS.indexOf(B.name),n=STEPS[(i+1)%STEPS.length];B.name=n;
+    if(n==='work'){B.pose='sit';B.x=300;B.y=127;B.dir='l';B.hold=9;B.path=[];B.pop=.25}
+    else{if(i===0||B.pose==='sit'){B.pose='walk';B.x=300;B.y=196;B.pop=.25}B.path=WP[n].slice();B.hold=-1}
+  }
+  function step(dt){
+    B.tm+=dt;if(B.pop>0)B.pop-=dt;
+    if(B.pose==='sit'){if(B.tm>B.hold&&!B.busy){B.tm=0;nextState()}return}
+    if(B.path.length){
+      var q=B.path[0],dx=q[0]-B.x,dy=q[1]-B.y,d=Math.hypot(dx,dy),sp=46*dt;
+      if(d<sp){B.x=q[0];B.y=q[1];B.path.shift()}else{B.x+=dx/d*sp;B.y+=dy/d*sp;B.dir=Math.abs(dx)>Math.abs(dy)?(dx>0?'r':'l'):(dy>0?'d':'u');B.wf=Math.floor(t*6)%2}
+      if(!B.path.length){B.tm=0;B.hold=B.name==='window'?5:B.name==='cat'?4:B.name==='shelf'?4:0;
+        B.pose=B.name==='cat'?'crouch':B.name==='chair'?'walk':'walk';B.dir=B.name==='window'?'u':B.name==='cat'?'l':B.name==='shelf'?'u':'l';if(B.name==='cat')CAT.awake=1}
+      return}
+    if(B.name==='chair'){B.tm=0;nextState();return}
+    if(B.tm>B.hold){B.tm=0;if(B.name==='cat')CAT.awake=0;nextState()}
+  }
+  function cat(){
+    var x=Math.round(CAT.x),y=CAT.y;
+    P([[-9,-7,16,7,'#1c1c24'],[5,-11,8,8,'#1c1c24'],[5,-13,2,3,'#1c1c24'],[11,-13,2,3,'#1c1c24'],[-12,-3,4,3,'#1c1c24'],[-12,-6+(Math.floor(t*2)%2),3,4,'#1c1c24']],x,y,false);
+    if(CAT.awake){R(x+7,y-8,1,2,'#f1e05a');R(x+10,y-8,1,2,'#f1e05a');var hy=(t*14)%10;if(B.name==='cat'&&B.pose==='crouch')for(var h=0;h<2;h++){var yy=y-26-((t*12+h*5)%12);R(x-4+h*8,yy,2,2,'#ff6b8a');R(x-5+h*8,yy-1,2,2,'#ff6b8a');R(x-3+h*8,yy-1,2,2,'#ff6b8a')}}
+    else{R(x+7,y-8,3,1,'#f1e05a');R(x+10,y-8,2,1,'#444');var z=(t*5)%14;R(x+14,y-16-z,3,1,'#fff');R(x+16,y-17-z,1,1,'#fff');R(x+14,y-18-z,3,1,'#fff')}
+  }
+  /* письмо */
+  var L=null;
+  function envelope(x,y,s,a){c.save();c.translate(Math.round(x),Math.round(y));c.rotate(a);c.scale(s,s);R(-8,-6,16,12,OL);R(-7,-5,14,10,'#fff7e0');R(-7,-5,14,1,'#e8d8a0');c.fillStyle='#d4006f';for(var i=0;i<7;i++)c.fillRect(-7+i,-5+i,1,1),c.fillRect(6-i,-5+i,1,1);R(-2,0,4,3,'#d4006f');c.restore()}
+  function loop(ts){
+    requestAnimationFrame(loop);if(!vis){loop.l=ts;return}
+    var dt=Math.min(.05,(ts-(loop.l||ts))/1000);loop.l=ts;t+=dt;step(dt);
+    c.clearRect(0,0,W,HH);wall();windowFrame();decor();shelf();rug();chair();
+    if(B.pose==='sit'){var sq=B.pop>0?1:0;P(body('sit',B.dir),B.x,B.y+sq,false)}
+    desk();
+    var items=[[CAT.y,cat],[244,plant],[244,flamp]];
+    if(B.pose!=='sit')items.push([B.y,function(){P(body(B.pose,B.dir,B.wf),Math.round(B.x),Math.round(B.y),B.dir==='l')}]);
+    items.sort(function(a,b){return a[0]-b[0]});items.forEach(function(i){i[1]()});
+    if(B.busy&&B.pose!=='sit'){R(B.x-3,B.y-46,6,10,'#fff');R(B.x-1,B.y-45,2,5,'#d4006f');R(B.x-1,B.y-39,2,2,'#d4006f')}
+    /* ночь и свет */
+    c.fillStyle='rgba(12,18,52,'+(.42*(1-DAYK))+')';c.fillRect(0,0,W,HH);
+    var gl=(1-DAYK)*.4;if(gl>.02){var g=c.createRadialGradient(188,112,2,188,120,70);g.addColorStop(0,'rgba(255,214,120,'+gl+')');g.addColorStop(1,'rgba(255,214,120,0)');c.fillStyle=g;c.fillRect(110,50,160,140)}
+    if(L){L.k+=dt/1.5;var k=Math.min(1,L.k),bx=W/2,by=HH+10,ex=224,ey=112;
+      var x=bx+(ex-bx)*k,y=by+(ey-by)*k-Math.sin(k*Math.PI)*90,s=1.5-k*.9;
+      for(var i=1;i<6;i++){var kk=Math.max(0,k-i*.03);R(bx+(ex-bx)*kk,by+(ey-by)*kk-Math.sin(kk*Math.PI)*90,2,2,'rgba(255,210,90,'+(.7-i*.1)+')')}
+      envelope(x,y,s,Math.sin(k*9)*.3);
+      if(k>=1&&!L.done){L.done=1;laptopMsg=1;setTimeout(go,900)}}
+  }
+  var btn=document.getElementById('gsend'),rt=document.getElementById('rt');
+  function go(){
+    var w=null;try{w=window.open(TG,'_blank','noopener')}catch(e){}
+    rt.hidden=false;rt.innerHTML=w?'Письмо отправлено. Telegram открылся в новой вкладке.':'Письмо долетело. Если Telegram не открылся, <a href="'+TG+'" target="_blank" rel="noopener">нажмите здесь</a>.';
+    if(!w)setTimeout(function(){location.href=TG},1800);
+    setTimeout(function(){L=null;laptopMsg=0;B.busy=0;btn.disabled=false;btn.lastChild.textContent='Шпуньк!';setTimeout(function(){rt.hidden=true},6000)},3000);
+  }
+  btn.addEventListener('click',function(){if(L)return;btn.disabled=true;btn.lastChild.textContent='Письмо в пути...';B.busy=1;L={k:0};rt.hidden=true});
+  if('IntersectionObserver' in window)new IntersectionObserver(function(es){vis=es[0].isIntersecting}).observe(cv);
+  requestAnimationFrame(loop);
+})();
+
 </script>
 </body>
 </html>
